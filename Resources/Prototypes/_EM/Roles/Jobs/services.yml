@@ -1,0 +1,77 @@
+- type: job
+  id: EMJobServicesSupervisor
+  name: em-job-name-services-supervisor
+  description: em-job-description-services-supervisor
+  playTimeTracker: EMJobServicesSupervisor
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: job
+  id: EMJobPriest
+  name: em-job-name-priest
+  description: em-job-description-priest
+  playTimeTracker: EMJobPriest
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobActor
+  name: em-job-name-actor
+  description: em-job-description-actor
+  playTimeTracker: EMJobActor
+  icon: "JobIconClown"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobJanitor
+  name: em-job-name-janitor
+  description: em-job-description-janitor
+  playTimeTracker: EMJobJanitor
+  icon: "JobIconJanitor"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobBartender
+  name: em-job-name-bartender
+  description: em-job-description-bartender
+  playTimeTracker: EMJobBartender
+  icon: "JobIconBartender"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobChef
+  name: em-job-name-chef
+  description: em-job-description-chef
+  playTimeTracker: EMJobChef
+  icon: "JobIconChef"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobBotanist
+  name: em-job-name-botanist
+  description: em-job-description-botanist
+  playTimeTracker: EMJobBotanist
+  icon: "JobIconBotanist"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobServiceAssistant
+  name: em-job-name-services-assistant
+  description: em-job-description-services-assistant
+  playTimeTracker: EMJobServiceAssistant
+  icon: "JobIconBotanist"
+  supervisors: job-supervisors-hop
+  setPreference: true

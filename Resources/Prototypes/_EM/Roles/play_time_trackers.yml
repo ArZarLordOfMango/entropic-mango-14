@@ -1,0 +1,92 @@
+- type: playTimeTracker
+  id: EMJobLogisticsSupervisor
+
+- type: playTimeTracker
+  id: EMJobScout
+
+- type: playTimeTracker
+  id: EMJobMiner
+
+- type: playTimeTracker
+  id: EMJobLogisticsAssistant
+
+- type: playTimeTracker
+  id: EMJobMedicalSupervisor
+
+- type: playTimeTracker
+  id: EMJobMedic
+
+- type: playTimeTracker
+  id: EMJobChemist
+
+- type: playTimeTracker
+  id: EMJobMedicalAssistant
+
+- type: playTimeTracker
+  id: EMJobEngineeringSupervisor
+
+- type: playTimeTracker
+  id: EMJobEngineer
+
+- type: playTimeTracker
+  id: EMJobAtmosphericEngineer
+
+- type: playTimeTracker
+  id: EMJobEngineeringAssistant
+
+- type: playTimeTracker
+  id: EMJobResearchSupervisor
+
+- type: playTimeTracker
+  id: EMJobResearcher
+
+- type: playTimeTracker
+  id: EMJobResearchAssistant
+
+- type: playTimeTracker
+  id: EMJobSecuritySupervisor
+
+- type: playTimeTracker
+  id: EMJobSecurityDetective
+
+- type: playTimeTracker
+  id: EMJobBrigMaster
+
+- type: playTimeTracker
+  id: EMJobSecurityOfficer
+
+- type: playTimeTracker
+  id: EMJobSecurityAssistant
+
+- type: playTimeTracker
+  id: EMJobServicesSupervisor
+
+- type: playTimeTracker
+  id: EMJobBotanist
+
+- type: playTimeTracker
+  id: EMJobChef
+
+- type: playTimeTracker
+  id: EMJobBartender
+
+- type: playTimeTracker
+  id: EMJobJanitor
+
+- type: playTimeTracker
+  id: EMJobActor
+
+- type: playTimeTracker
+  id: EMJobPriest
+
+- type: playTimeTracker
+  id: EMJobServiceAssistant
+
+- type: playTimeTracker
+  id: EMJobPassenger
+
+- type: playTimeTracker
+  id: EMJobStationAdministrator
+
+- type: playTimeTracker
+  id: EMJobStationOverwatch

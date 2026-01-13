@@ -1,0 +1,41 @@
+- type: job
+  id: EMJobEngineeringSupervisor
+  name: em-job-name-research-assistant
+  description: em-job-description-research-assistant
+  playTimeTracker: EMJobEngineeringSupervisor
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: job
+  id: EMJobEngineer
+  name: em-job-name-engineer
+  description: em-job-description-engineer
+  playTimeTracker: EMJobEngineer
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobAtmosphericEngineer
+  name: em-job-name-atmospheric-engineer
+  description: em-job-description-atmospheric-engineer
+  playTimeTracker: EMJobAtmosphericEngineer
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobEngineeringAssistant
+  name: em-job-name-engineering-assistant
+  description: em-job-description-engineering-assistant
+  playTimeTracker: EMJobEngineeringAssistant
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
