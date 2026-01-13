@@ -1,0 +1,32 @@
+- type: job
+  id: EMJobResearchSupervisor
+  name: em-job-name-research-supervisor
+  description: em-job-description-research-supervisor
+  playTimeTracker: EMJobResearchSupervisor
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: job
+  id: EMJobResearcher
+  name: em-job-name-researcher
+  description: em-job-description-researcher
+  playTimeTracker: EMJobResearcher
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobResearchAssistant
+  name: em-job-name-research-assistant
+  description: em-job-description-research-assistant
+  playTimeTracker: EMJobResearchAssistant
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true

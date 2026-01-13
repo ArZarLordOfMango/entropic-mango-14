@@ -1,0 +1,41 @@
+- type: job
+  id: EMJobLogisticsSupervisor
+  name: em-job-name-logistics-supervisor
+  description: em-job-description-logistics-supervisor
+  playTimeTracker: EMJobLogisticsSupervisor
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: job
+  id: EMJobScout
+  name: em-job-name-scout
+  description: em-job-description-scout
+  playTimeTracker: EMJobScout
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobMiner
+  name: em-job-name-miner
+  description: em-job-description-miner
+  playTimeTracker: EMJobMiner
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobLogisticsAssistant
+  name: em-job-name-logistics-assistant
+  description: em-job-description-logistics-assistant
+  playTimeTracker: EMJobLogisticsAssistant
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true

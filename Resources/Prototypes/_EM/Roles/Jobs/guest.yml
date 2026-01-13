@@ -1,0 +1,8 @@
+- type: job
+  id: EMJobPassenger
+  name: em-job-name-passenger
+  description: em-job-description-passenger
+  playTimeTracker: EMJobPassenger
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-everyone
+  setPreference: true

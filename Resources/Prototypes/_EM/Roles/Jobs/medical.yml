@@ -1,0 +1,41 @@
+- type: job
+  id: EMJobMedicalSupervisor
+  name: em-job-name-medical-supervisor
+  description: em-job-description-medical-supervisor
+  playTimeTracker: EMJobMedicalSupervisor
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: job
+  id: EMJobMedic
+  name: em-job-name-medic
+  description: em-job-description-medic
+  playTimeTracker: EMJobMedic
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobChemist
+  name: em-job-name-chemist
+  description: em-job-description-chemist
+  playTimeTracker: EMJobChemist
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
+
+- type: job
+  id: EMJobMedicalAssistant
+  name: em-job-name-medic-assistant
+  description: em-job-description-medic-assistant
+  playTimeTracker: EMJobMedicalAssistant
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-hop
+  setPreference: true
