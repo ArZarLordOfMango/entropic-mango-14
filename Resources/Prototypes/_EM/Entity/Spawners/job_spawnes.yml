@@ -1,0 +1,12 @@
+
+ - type: entity
+   id: EMJobSpawnPointPassenger
+   parent: SpawnPointJobBase
+   categories: [ ForkFiltered ]
+   name: job spawn point (Passenger)
+   components:
+   - type: SpawnPoint
+     job_id: EMJobPassenger
+   - type: Sprite
+     layers:
+       - state: green

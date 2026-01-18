@@ -15784,7 +15784,7 @@ entities:
     - type: Transform
       pos: 31.5,19.5
       parent: 1
-- proto: SpawnPointCaptain
+- proto: EMJobSpawnPointPassenger
   entities:
   - uid: 24
     components:
