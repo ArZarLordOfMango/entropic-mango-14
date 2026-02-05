@@ -13,7 +13,7 @@ public abstract class SharedJobStatusSystem : EntitySystem
     [Dependency] private readonly AccessReaderSystem _accessReader = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
 
-    private static readonly ProtoId<JobIconPrototype> JobIconForNoId = "JobIconNoId";
+    private static readonly ProtoId<JobIconPrototype> JobIconForNoId = "EMJobBaseIcon";
 
     public override void Initialize()
     {
