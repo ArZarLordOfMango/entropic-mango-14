@@ -1,5 +1,4 @@
 - type: jobIcon
-  abstract: true
   id: EMJobBaseIcon
   priority: 1
   locationPreference: Right
