@@ -3,23 +3,39 @@
   name: em-job-name-services-supervisor
   description: em-job-description-services-supervisor
   playTimeTracker: EMJobServicesSupervisor
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconServicesSupervisor"
+  weight: 5
+  supervisors: em-job-name-station-administrator
+  access:
+    - EMServices
+    - EMPriest
+    - EMActor
+    - EMJanitor
+    - EMBar
+    - EMKitchen
+    - EMBotany
+    - EMServicesSupervisor
+    - EMAdministrative
+    - EMMaintenance
   setPreference: true
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
-    components:
-      - type: CommandStaff
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+    - !type:AddComponentSpecial
+      components:
+        - type: CommandStaff
 
 - type: job
   id: EMJobPriest
   name: em-job-name-priest
   description: em-job-description-priest
   playTimeTracker: EMJobPriest
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconPriest"
+  supervisors: em-job-description-services-supervisor
+  access:
+    - EMServices
+    - EMPriest
+    - EMMaintenance
   setPreference: true
 
 - type: job
@@ -27,8 +43,12 @@
   name: em-job-name-actor
   description: em-job-description-actor
   playTimeTracker: EMJobActor
-  icon: "JobIconClown"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconActor"
+  supervisors: em-job-description-services-supervisor
+  access:
+    - EMServices
+    - EMActor
+    - EMMaintenance
   setPreference: true
 
 - type: job
@@ -36,8 +56,12 @@
   name: em-job-name-janitor
   description: em-job-description-janitor
   playTimeTracker: EMJobJanitor
-  icon: "JobIconJanitor"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconJanitor"
+  supervisors: em-job-description-services-supervisor
+  access:
+    - EMServices
+    - EMJanitor
+    - EMMaintenance
   setPreference: true
 
 - type: job
@@ -45,8 +69,12 @@
   name: em-job-name-bartender
   description: em-job-description-bartender
   playTimeTracker: EMJobBartender
-  icon: "JobIconBartender"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconBartender"
+  supervisors: em-job-description-services-supervisor
+  access:
+    - EMServices
+    - EMBar
+    - EMMaintenance
   setPreference: true
 
 - type: job
@@ -54,8 +82,13 @@
   name: em-job-name-chef
   description: em-job-description-chef
   playTimeTracker: EMJobChef
-  icon: "JobIconChef"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconChef"
+  supervisors: em-job-description-services-supervisor
+  access:
+    - EMServices
+    - EMKitchen
+    - EMBotany
+    - EMMaintenance
   setPreference: true
 
 - type: job
@@ -63,8 +96,12 @@
   name: em-job-name-botanist
   description: em-job-description-botanist
   playTimeTracker: EMJobBotanist
-  icon: "JobIconBotanist"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconBotanist"
+  supervisors: em-job-description-services-supervisor
+  access:
+    - EMServices
+    - EMBotany
+    - EMMaintenance
   setPreference: true
 
 - type: job
@@ -72,6 +109,8 @@
   name: em-job-name-services-assistant
   description: em-job-description-services-assistant
   playTimeTracker: EMJobServiceAssistant
-  icon: "JobIconBotanist"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconServiceAssistant"
+  supervisors: em-job-description-services-supervisor
+  access:
+    - EMServices
   setPreference: true

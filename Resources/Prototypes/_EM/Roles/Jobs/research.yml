@@ -3,23 +3,35 @@
   name: em-job-name-research-supervisor
   description: em-job-description-research-supervisor
   playTimeTracker: EMJobResearchSupervisor
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconResearchSupervisor"
+  weight: 5
+  supervisors: em-job-name-station-administrator
+  access:
+    - EMResearch
+    - EMResearcher
+    - EMResearchSupervisor
+    - EMAdministrative
+    - EMMaintenance
+    - EMSpace
   setPreference: true
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
-    components:
-      - type: CommandStaff
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+    - !type:AddComponentSpecial
+      components:
+        - type: CommandStaff
 
 - type: job
   id: EMJobResearcher
   name: em-job-name-researcher
   description: em-job-description-researcher
   playTimeTracker: EMJobResearcher
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconResearcher"
+  supervisors: em-job-name-research-supervisor
+  access:
+    - EMResearch
+    - EMResearcher
+    - EMMaintenance
   setPreference: true
 
 - type: job
@@ -27,6 +39,8 @@
   name: em-job-name-research-assistant
   description: em-job-description-research-assistant
   playTimeTracker: EMJobResearchAssistant
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconResearchAssistant"
+  supervisors: em-job-name-research-supervisor
+  access:
+    - EMResearch
   setPreference: true

@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobStationOverwatch
+  groups:
+    - EMStationOverwatchPDA
+
+- type: loadoutGroup
+  id: EMStationOverwatchPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMStationOverwatchPDA
+    - EMStationOverwatchBadge
+
+- type: loadout
+  id: EMStationOverwatchPDA
+  equipment:
+    id: EMStationOverwatchPDA
+
+- type: loadout
+  id: EMStationOverwatchBadge
+  equipment:
+    id: EMIdBadgeStationOverwatch

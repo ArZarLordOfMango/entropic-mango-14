@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobScout
+  groups:
+    - EMScoutPDA
+
+- type: loadoutGroup
+  id: EMScoutPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMScoutPDA
+    - EMScoutBadge
+
+- type: loadout
+  id: EMScoutPDA
+  equipment:
+    id: EMScoutPDA
+
+- type: loadout
+  id: EMScoutBadge
+  equipment:
+    id: EMIdBadgeScout

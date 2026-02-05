@@ -3,64 +3,93 @@
   name: em-job-name-security-supervisor
   description: em-job-description-security-supervisor
   playTimeTracker: EMJobSecuritySupervisor
-  icon: "JobIconHeadOfSecurity"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconSecuritySupervisor"
+  weight: 5
+  supervisors: em-job-name-station-administrator
   setPreference: true
+  access:
+    - EMSecurity
+    - EMSecurityOfficer
+    - EMSecurityDetective
+    - EMBrigMaster
+    - EMArmory
+    - EMArmoryRedCode
+    - EMGenpopEnter
+    - EMGenpopLeave
+    - EMSecuritySupervisor
+    - EMAdministrative
+    - EMMaintenance
+    - EMSpace
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
-    components:
-      - type: CommandStaff
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+    - !type:AddComponentSpecial
+      components:
+        - type: CommandStaff
 
 - type: job
   id: EMJobSecurityDetective
   name: em-job-name-security-detective
   description: em-job-description-security-detective
   playTimeTracker: EMJobSecurityDetective
-  icon: "JobIconHeadOfSecurity"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconSecurityDetective"
+  supervisors: em-job-name-security-supervisor
   setPreference: true
+  access:
+    - EMSecurity
+    - EMSecurityDetective
+    - EMMaintenance
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
 
 - type: job
   id: EMJobBrigMaster
   name: em-job-name-brig-master
   description: em-job-description-brig-master
   playTimeTracker: EMJobBrigMaster
-  icon: "JobIconHeadOfSecurity"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconBrigMaster"
+  supervisors: em-job-name-security-supervisor
+  access:
+    - EMSecurity
+    - EMSecurityOfficer
+    - EMSecurityDetective
+    - EMBrigMaster
+    - EMArmory
+    - EMMaintenance
+    - EMSpace
   setPreference: true
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
 
 - type: job
   id: EMJobSecurityOfficer
   name: em-job-name-security-officer
   description: em-job-description-security-officer
   playTimeTracker: EMJobSecurityOfficer
-  icon: "JobIconHeadOfSecurity"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconSecurityOfficer"
+  supervisors: em-job-name-security-supervisor
+  access:
+    - EMSecurity
+    - EMSecurityOfficer
+    - EMMaintenance
   setPreference: true
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
 
 - type: job
   id: EMJobSecurityAssistant
   name: em-job-name-security-assistant
   description: em-job-description-security-assistant
   playTimeTracker: EMJobSecurityAssistant
-  icon: "JobIconHeadOfSecurity"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconSecurityAssistant"
+  supervisors: em-job-name-security-supervisor
+  access:
+    - EMSecurity
+    - EMMaintenance
   setPreference: true
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]

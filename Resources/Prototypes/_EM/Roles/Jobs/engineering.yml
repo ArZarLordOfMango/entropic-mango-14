@@ -1,25 +1,39 @@
 - type: job
   id: EMJobEngineeringSupervisor
-  name: em-job-name-research-assistant
-  description: em-job-description-research-assistant
+  name: em-job-name-engineering-supervisor
+  description: em-job-description-engineering-supervisor
   playTimeTracker: EMJobEngineeringSupervisor
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconEngineeringSupervisor"
+  weight: 5
+  supervisors: em-job-name-station-administrator
   setPreference: true
+  access:
+    - EMEngineering
+    - EMAtmospheric
+    - EMReactor
+    - EMEngineeringSupervisor
+    - EMAdministrative
+    - EMMaintenance
+    - EMSpace
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
-    components:
-      - type: CommandStaff
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+    - !type:AddComponentSpecial
+      components:
+        - type: CommandStaff
 
 - type: job
   id: EMJobEngineer
   name: em-job-name-engineer
   description: em-job-description-engineer
   playTimeTracker: EMJobEngineer
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconEngineer"
+  supervisors: em-job-name-engineering-supervisor
+  access:
+    - EMEngineering
+    - EMReactor
+    - EMMaintenance
+    - EMSpace
   setPreference: true
 
 - type: job
@@ -27,8 +41,14 @@
   name: em-job-name-atmospheric-engineer
   description: em-job-description-atmospheric-engineer
   playTimeTracker: EMJobAtmosphericEngineer
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconAtmosphericEngineer"
+  supervisors: em-job-name-engineering-supervisor
+  access:
+    - EMEngineering
+    - EMAtmospheric
+    - EMReactor
+    - EMMaintenance
+    - EMSpace
   setPreference: true
 
 - type: job
@@ -36,6 +56,10 @@
   name: em-job-name-engineering-assistant
   description: em-job-description-engineering-assistant
   playTimeTracker: EMJobEngineeringAssistant
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconEngineeringAssistant"
+  supervisors: em-job-name-engineering-supervisor
+  access:
+    - EMEngineering
+    - EMMaintenance
+    - EMSpace
   setPreference: true

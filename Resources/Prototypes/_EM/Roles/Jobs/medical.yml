@@ -3,23 +3,36 @@
   name: em-job-name-medical-supervisor
   description: em-job-description-medical-supervisor
   playTimeTracker: EMJobMedicalSupervisor
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconMedicalSupervisor"
+  weight: 5
+  supervisors: em-job-name-station-administrator
+  access:
+    - EMMedical
+    - EMMedic
+    - EMChemist
+    - EMMedicalSupervisor
+    - EMAdministrative
+    - EMMaintenance
+    - EMSpace
   setPreference: true
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
-    components:
-      - type: CommandStaff
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+    - !type:AddComponentSpecial
+      components:
+        - type: CommandStaff
 
 - type: job
   id: EMJobMedic
   name: em-job-name-medic
   description: em-job-description-medic
   playTimeTracker: EMJobMedic
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconMedic"
+  supervisors: em-job-name-medical-supervisor
+  access:
+    - EMMedical
+    - EMMedic
+    - EMMaintenance
   setPreference: true
 
 - type: job
@@ -27,8 +40,12 @@
   name: em-job-name-chemist
   description: em-job-description-chemist
   playTimeTracker: EMJobChemist
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconChemist"
+  supervisors: em-job-name-medical-supervisor
+  access:
+    - EMMedical
+    - EMChemist
+    - EMMaintenance
   setPreference: true
 
 - type: job
@@ -36,6 +53,8 @@
   name: em-job-name-medic-assistant
   description: em-job-description-medic-assistant
   playTimeTracker: EMJobMedicalAssistant
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconMedicalAssistant"
+  supervisors: em-job-name-medical-supervisor
   setPreference: true
+  access:
+    - EMMedical

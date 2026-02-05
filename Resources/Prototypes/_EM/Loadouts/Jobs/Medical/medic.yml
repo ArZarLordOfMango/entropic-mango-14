@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobMedic
+  groups:
+    - EMMedicPDA
+
+- type: loadoutGroup
+  id: EMMedicPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMMedicPDA
+    - EMMedicBadge
+
+- type: loadout
+  id: EMMedicPDA
+  equipment:
+    id: EMMedicPDA
+
+- type: loadout
+  id: EMMedicBadge
+  equipment:
+    id: EMIdBadgeMedic

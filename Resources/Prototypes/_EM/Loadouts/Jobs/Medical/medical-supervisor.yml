@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobMedicalSupervisor
+  groups:
+    - EMMedicalSupervisorPDA
+
+- type: loadoutGroup
+  id: EMMedicalSupervisorPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMMedicalSupervisorPDA
+    - EMMedicalSupervisorBadge
+
+- type: loadout
+  id: EMMedicalSupervisorPDA
+  equipment:
+    id: EMMedicalSupervisorPDA
+
+- type: loadout
+  id: EMMedicalSupervisorBadge
+  equipment:
+    id: EMIdBadgeMedicalSupervisor

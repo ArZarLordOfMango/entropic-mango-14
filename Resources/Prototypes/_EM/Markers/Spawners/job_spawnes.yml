@@ -1,0 +1,544 @@
+- type: entity
+  id: EMJobBaseSpawnPoint
+  parent: EMMarkerBase
+  categories: [ForkFiltered]
+  abstract: true
+  suffix: Job Spawn
+  components:
+    - type: SpawnPoint
+      spawn_type: Job
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#55ff00"
+        - sprite: &icon-rsi _EM/Interface/Misc/job_icon.rsi
+          scale: 2.0,2.0
+          state: Base
+
+- type: entity
+  id: EMJobSpawnPointLogisticsSupervisor
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: LogisticsSupervisor
+  components:
+    - type: SpawnPoint
+      job_id: EMJobLogisticsSupervisor
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#b18644"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: LogisticsSupervisor
+
+- type: entity
+  id: EMJobSpawnPointScout
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Scout
+  components:
+    - type: SpawnPoint
+      job_id: EMJobScout
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#b18644"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Scout
+
+- type: entity
+  id: EMJobSpawnPointMiner
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Miner
+  components:
+    - type: SpawnPoint
+      job_id: EMJobMiner
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#b18644"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Miner
+
+- type: entity
+  id: EMJobSpawnPointLogisticsAssistant
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: LogisticsAssistant
+  components:
+    - type: SpawnPoint
+      job_id: EMJobLogisticsAssistant
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#b18644"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: LogisticsAssistant
+
+- type: entity
+  id: EMJobSpawnPointMedicalSupervisor
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: MedicalSupervisor
+  components:
+    - type: SpawnPoint
+      job_id: EMJobMedicalSupervisor
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#5b97bc"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: MedicalSupervisor
+
+- type: entity
+  id: EMJobSpawnPointMedic
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Medic
+  components:
+    - type: SpawnPoint
+      job_id: EMJobMedic
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#5b97bc"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Medic
+
+- type: entity
+  id: EMJobSpawnPointChemist
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Chemist
+  components:
+    - type: SpawnPoint
+      job_id: EMJobChemist
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#5b97bc"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Chemist
+
+- type: entity
+  id: EMJobSpawnPointMedicalAssistant
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: MedicalAssistant
+  components:
+    - type: SpawnPoint
+      job_id: EMJobMedicalAssistant
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#5b97bc"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: MedicalAssistant
+
+- type: entity
+  id: EMJobSpawnPointEngineeringSupervisor
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: EngineeringSupervisor
+  components:
+    - type: SpawnPoint
+      job_id: EMJobEngineeringSupervisor
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#f39f27"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: EngineeringSupervisor
+
+- type: entity
+  id: EMJobSpawnPointEngineer
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Engineer
+  components:
+    - type: SpawnPoint
+      job_id: EMJobEngineer
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#f39f27"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Engineer
+
+- type: entity
+  id: EMJobSpawnPointAtmosphericEngineer
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: AtmosphericEngineer
+  components:
+    - type: SpawnPoint
+      job_id: EMJobAtmosphericEngineer
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#f39f27"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: AtmosphericEngineer
+
+- type: entity
+  id: EMJobSpawnPointEngineeringAssistant
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: EngineeringAssistant
+  components:
+    - type: SpawnPoint
+      job_id: EMJobEngineeringAssistant
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#f39f27"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: EngineeringAssistant
+
+- type: entity
+  id: EMJobSpawnPointResearchSupervisor
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: ResearchSupervisor
+  components:
+    - type: SpawnPoint
+      job_id: EMJobResearchSupervisor
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#c96dbf"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: ResearchSupervisor
+
+- type: entity
+  id: EMJobSpawnPointResearcher
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Researcher
+  components:
+    - type: SpawnPoint
+      job_id: EMJobResearcher
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#c96dbf"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Researcher
+
+- type: entity
+  id: EMJobSpawnPointResearchAssistant
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: ResearchAssistant
+  components:
+    - type: SpawnPoint
+      job_id: EMJobResearchAssistant
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#c96dbf"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: ResearchAssistant
+
+- type: entity
+  id: EMJobSpawnPointSecuritySupervisor
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: SecuritySupervisor
+  components:
+    - type: SpawnPoint
+      job_id: EMJobSecuritySupervisor
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#cb0000"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: SecuritySupervisor
+
+- type: entity
+  id: EMJobSpawnPointSecurityDetective
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: SecurityDetective
+  components:
+    - type: SpawnPoint
+      job_id: EMJobSecurityDetective
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#cb0000"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: SecurityDetective
+
+- type: entity
+  id: EMJobSpawnPointBrigMaster
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: BrigMaster
+  components:
+    - type: SpawnPoint
+      job_id: EMJobBrigMaster
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#cb0000"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: BrigMaster
+
+- type: entity
+  id: EMJobSpawnPointSecurityOfficer
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: SecurityOfficer
+  components:
+    - type: SpawnPoint
+      job_id: EMJobSecurityOfficer
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#cb0000"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: SecurityOfficer
+
+- type: entity
+  id: EMJobSpawnPointSecurityAssistant
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: SecurityAssistant
+  components:
+    - type: SpawnPoint
+      job_id: EMJobSecurityAssistant
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#cb0000"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: SecurityAssistant
+
+- type: entity
+  id: EMJobSpawnPointServicesSupervisor
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: ServicesSupervisor
+  components:
+    - type: SpawnPoint
+      job_id: EMJobServicesSupervisor
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#639137"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: ServicesSupervisor
+
+- type: entity
+  id: EMJobSpawnPointBotanist
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Botanist
+  components:
+    - type: SpawnPoint
+      job_id: EMJobBotanist
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#639137"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Botanist
+
+- type: entity
+  id: EMJobSpawnPointChef
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Chef
+  components:
+    - type: SpawnPoint
+      job_id: EMJobChef
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#639137"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Chef
+
+- type: entity
+  id: EMJobSpawnPointBartender
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Bartender
+  components:
+    - type: SpawnPoint
+      job_id: EMJobBartender
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#639137"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Bartender
+
+- type: entity
+  id: EMJobSpawnPointJanitor
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Janitor
+  components:
+    - type: SpawnPoint
+      job_id: EMJobJanitor
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#639137"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Janitor
+
+- type: entity
+  id: EMJobSpawnPointActor
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Actor
+  components:
+    - type: SpawnPoint
+      job_id: EMJobActor
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#639137"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Actor
+
+- type: entity
+  id: EMJobSpawnPointPriest
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Priest
+  components:
+    - type: SpawnPoint
+      job_id: EMJobPriest
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#639137"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Priest
+
+- type: entity
+  id: EMJobSpawnPointServiceAssistant
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: ServiceAssistant
+  components:
+    - type: SpawnPoint
+      job_id: EMJobServiceAssistant
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#639137"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: ServiceAssistant
+
+- type: entity
+  id: EMJobSpawnPointPassenger
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: Passenger
+  components:
+    - type: SpawnPoint
+      job_id: EMJobPassenger
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#7b7b7f"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: Passenger
+
+- type: entity
+  id: EMJobSpawnPointStationAdministrator
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: StationAdministrator
+  components:
+    - type: SpawnPoint
+      job_id: EMJobStationAdministrator
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#1b67a5"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: StationAdministrator
+
+- type: entity
+  id: EMJobSpawnPointStationOverwatch
+  parent: EMJobBaseSpawnPoint
+  name: job spawn point
+  suffix: StationOverwatch
+  components:
+    - type: SpawnPoint
+      job_id: EMJobStationOverwatch
+    - type: Sprite
+      layers:
+        - sprite: _EM/Markers/spawners.rsi
+        - state: square-spawner
+          color: "#1b67a5"
+        - sprite: *icon-rsi
+          scale: 2.0,2.0
+          state: StationOverwatch

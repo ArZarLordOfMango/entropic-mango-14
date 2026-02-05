@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobPriest
+  groups:
+    - EMPriestPDA
+
+- type: loadoutGroup
+  id: EMPriestPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMPriestPDA
+    - EMPriestBadge
+
+- type: loadout
+  id: EMPriestPDA
+  equipment:
+    id: EMPriestPDA
+
+- type: loadout
+  id: EMPriestBadge
+  equipment:
+    id: EMIdBadgePriest

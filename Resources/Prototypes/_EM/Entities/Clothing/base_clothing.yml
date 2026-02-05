@@ -1,0 +1,33 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: EMBaseClothing
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+  - type: Tag
+    tags:
+      - EMWhitelistChameleon
+  - type: StaticPrice
+    price: 10
+  - type: FlavorProfile
+    flavors:
+    - fiber
+
+- type: entity
+  abstract: true
+  id: EMBaseClothingSlot
+  components:
+  - type: ItemSlots
+  - type: ContainerContainer
+    containers:
+      item: !type:ContainerSlot
+
+- type: entity
+  abstract: true
+  id: EMBaseToggleClothing
+  components:
+  - type: ItemToggle
+    onUse: false
+  - type: ToggleClothing

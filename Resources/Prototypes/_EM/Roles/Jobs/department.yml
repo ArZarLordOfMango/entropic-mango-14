@@ -2,93 +2,93 @@
   id: EMLogistics
   name: em-department-Logistics
   description: em-department-Logistics-description
-  color: "#A46106"
+  color: "#b18644"
   editorHidden: false
   roles:
-  - EMJobLogisticsSupervisor
-  - EMJobScout
-  - EMJobMiner
-  - EMJobLogisticsAssistant
+    - EMJobLogisticsSupervisor
+    - EMJobScout
+    - EMJobMiner
+    - EMJobLogisticsAssistant
 
 - type: department
   id: EMMedical
   name: em-department-Medical
   description: em-department-Medical-description
-  color: "#A46106"
+  color: "#5b97bc"
   editorHidden: false
   roles:
-  - EMJobMedicalSupervisor
-  - EMJobMedic
-  - EMJobChemist
-  - EMJobMedicalAssistant
+    - EMJobMedicalSupervisor
+    - EMJobMedic
+    - EMJobChemist
+    - EMJobMedicalAssistant
 
 - type: department
   id: EMEngineering
   name: em-department-Engineering
   description: em-department-Engineering-description
-  color: "#A46106"
+  color: "#f39f27"
   editorHidden: false
   roles:
-  - EMJobEngineeringSupervisor
-  - EMJobEngineer
-  - EMJobAtmosphericEngineer
-  - EMJobEngineeringAssistant
+    - EMJobEngineeringSupervisor
+    - EMJobEngineer
+    - EMJobAtmosphericEngineer
+    - EMJobEngineeringAssistant
 
 - type: department
-  id: EMResearchDepartment
+  id: EMResearch
   name: em-department-Research
   description: em-department-Research-description
-  color: "#A46106"
+  color: "#c96dbf"
   editorHidden: false
   roles:
-  - EMJobResearchSupervisor
-  - EMJobResearcher
-  - EMJobResearchAssistant
+    - EMJobResearchSupervisor
+    - EMJobResearcher
+    - EMJobResearchAssistant
 
 - type: department
   id: EMSecurity
   name: em-department-Security
   description: em-department-Security-description
-  color: "#A46106"
+  color: "#cb0000"
   editorHidden: false
   roles:
-  - EMJobSecuritySupervisor
-  - EMJobSecurityDetective
-  - EMJobBrigMaster
-  - EMJobSecurityOfficer
-  - EMJobSecurityAssistant
+    - EMJobSecuritySupervisor
+    - EMJobSecurityDetective
+    - EMJobBrigMaster
+    - EMJobSecurityOfficer
+    - EMJobSecurityAssistant
 
 - type: department
   id: EMServices
   name: em-department-Services
   description: em-department-Services-description
-  color: "#A46106"
+  color: "#639137"
   editorHidden: false
   roles:
-  - EMJobServicesSupervisor
-  - EMJobBotanist
-  - EMJobChef
-  - EMJobBartender
-  - EMJobJanitor
-  - EMJobActor
-  - EMJobPriest
-  - EMJobServiceAssistant
+    - EMJobServicesSupervisor
+    - EMJobBotanist
+    - EMJobChef
+    - EMJobBartender
+    - EMJobJanitor
+    - EMJobActor
+    - EMJobPriest
+    - EMJobServiceAssistant
 
 - type: department
   id: EMGuest
   name: em-department-Guest
   description: em-department-Guest-description
-  color: "#A46106"
+  color: "#7b7b7f"
   editorHidden: false
   roles:
-  - EMJobPassenger
+    - EMJobPassenger
 
 - type: department
   id: EMAdministrative
   name: em-department-Administrative
   description: em-department-Administrative-description
-  color: "#A46106"
+  color: "#1b67a5"
   editorHidden: false
   roles:
-  - EMJobStationAdministrator
-  - EMJobStationOverwatch
+    - EMJobStationAdministrator
+    - EMJobStationOverwatch

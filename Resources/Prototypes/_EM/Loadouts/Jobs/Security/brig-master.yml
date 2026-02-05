@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobBrigMaster
+  groups:
+    - EMBrigMasterPDA
+
+- type: loadoutGroup
+  id: EMBrigMasterPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMBrigMasterPDA
+    - EMBrigMasterBadge
+
+- type: loadout
+  id: EMBrigMasterPDA
+  equipment:
+    id: EMBrigMasterPDA
+
+- type: loadout
+  id: EMBrigMasterBadge
+  equipment:
+    id: EMIdBadgeBrigMaster

@@ -1,0 +1,1001 @@
+- type: entity
+  parent: EMBaseClothing
+  id: EMIdCardBase
+  name: identification card
+  description: A card necessary to access various areas aboard the station.
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _EM/Objects/Misc/id_cards.rsi
+      layers:
+        - state: base_id_card
+        - sprite: &icon-rsi _EM/Interface/Misc/job_icon.rsi
+          offset: &icon-offset -0.15625, 0
+          state: Base
+    - type: Item
+      size: Small
+      heldPrefix: default
+      storedRotation: -90
+    - type: Access
+    - type: IdCard
+    - type: StationRecordKeyStorage
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - EMWhitelistChameleon
+        - EMWhitelistChameleonIdCard
+        - EMIdCard
+    - type: StealTarget
+      stealGroup: IDCard
+
+- type: entity
+  parent: EMIdCardBase
+  id: EMIdBadgeBase
+  name: identification badge
+  description: A card necessary to access various areas aboard the station.
+  abstract: true
+  categories: [ForkFiltered]
+  components:
+    - type: Sprite
+      sprite: _EM/Objects/Misc/id_cards.rsi
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: &icon-badge-offset -0.1875, -0.09375
+          state: Base
+    - type: Clothing
+      slots:
+        - idcard
+      sprite: _EM/Objects/Misc/id_cards.rsi
+    - type: Tag
+      tags:
+        - EMIdBadge
+
+- type: entity
+  parent: EMIdCardBase
+  id: EMIdCardEmpty
+  name: ID card
+  categories: [ForkFiltered]
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Base
+
+- type: entity
+  parent: EMIdBadgeBase
+  id: EMIdBadgeEmpty
+  name: ID badge
+  categories: [ForkFiltered]
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Base
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardLogisticsSupervisor
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: LogisticsSupervisor
+    - type: PresetIdCard
+      job: EMJobLogisticsSupervisor
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeLogisticsSupervisor
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: LogisticsSupervisor
+        - state: badge_top_logistics
+    - type: PresetIdCard
+      job: EMJobLogisticsSupervisor
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardScout
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Scout
+    - type: PresetIdCard
+      job: EMJobScout
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeScout
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Scout
+        - state: badge_top_logistics
+    - type: PresetIdCard
+      job: EMJobScout
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardMiner
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Miner
+    - type: PresetIdCard
+      job: EMJobMiner
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeMiner
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Miner
+        - state: badge_top_logistics
+    - type: PresetIdCard
+      job: EMJobMiner
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardLogisticsAssistant
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: LogisticsAssistant
+    - type: PresetIdCard
+      job: EMJobLogisticsAssistant
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeLogisticsAssistant
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: LogisticsAssistant
+        - state: badge_top_logistics
+    - type: PresetIdCard
+      job: EMJobLogisticsAssistant
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardMedicalSupervisor
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: MedicalSupervisor
+    - type: PresetIdCard
+      job: EMJobMedicalSupervisor
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeMedicalSupervisor
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: MedicalSupervisor
+        - state: badge_top_medical
+    - type: PresetIdCard
+      job: EMJobMedicalSupervisor
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardMedic
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Medic
+    - type: PresetIdCard
+      job: EMJobMedic
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeMedic
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Medic
+        - state: badge_top_medical
+    - type: PresetIdCard
+      job: EMJobMedic
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardChemist
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Chemist
+    - type: PresetIdCard
+      job: EMJobChemist
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeChemist
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Chemist
+        - state: badge_top_medical
+    - type: PresetIdCard
+      job: EMJobChemist
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardMedicalAssistant
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: MedicalAssistant
+    - type: PresetIdCard
+      job: EMJobMedicalAssistant
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeMedicalAssistant
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: MedicalAssistant
+        - state: badge_top_medical
+    - type: PresetIdCard
+      job: EMJobMedicalAssistant
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardEngineeringSupervisor
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: EngineeringSupervisor
+    - type: PresetIdCard
+      job: EMJobEngineeringSupervisor
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeEngineeringSupervisor
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: EngineeringSupervisor
+        - state: badge_top_engineering
+    - type: PresetIdCard
+      job: EMJobEngineeringSupervisor
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardEngineer
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Engineer
+    - type: PresetIdCard
+      job: EMJobEngineer
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeEngineer
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Engineer
+        - state: badge_top_engineering
+    - type: PresetIdCard
+      job: EMJobEngineer
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardAtmosphericEngineer
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: AtmosphericEngineer
+    - type: PresetIdCard
+      job: EMJobAtmosphericEngineer
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeAtmosphericEngineer
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: AtmosphericEngineer
+        - state: badge_top_engineering
+    - type: PresetIdCard
+      job: EMJobAtmosphericEngineer
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardEngineeringAssistant
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: EngineeringAssistant
+    - type: PresetIdCard
+      job: EMJobEngineeringAssistant
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeEngineeringAssistant
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: EngineeringAssistant
+        - state: badge_top_engineering
+    - type: PresetIdCard
+      job: EMJobEngineeringAssistant
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardResearchSupervisor
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: ResearchSupervisor
+    - type: PresetIdCard
+      job: EMJobResearchSupervisor
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeResearchSupervisor
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: ResearchSupervisor
+        - state: badge_top_research
+    - type: PresetIdCard
+      job: EMJobResearchSupervisor
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardResearcher
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Researcher
+    - type: PresetIdCard
+      job: EMJobResearcher
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeResearcher
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Researcher
+        - state: badge_top_research
+    - type: PresetIdCard
+      job: EMJobResearcher
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardResearchAssistant
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: ResearchAssistant
+    - type: PresetIdCard
+      job: EMJobResearchAssistant
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeResearchAssistant
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: ResearchAssistant
+        - state: badge_top_research
+    - type: PresetIdCard
+      job: EMJobResearchAssistant
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardSecuritySupervisor
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: SecuritySupervisor
+    - type: PresetIdCard
+      job: EMJobSecuritySupervisor
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeSecuritySupervisor
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: SecuritySupervisor
+        - state: badge_top_security
+    - type: PresetIdCard
+      job: EMJobSecuritySupervisor
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardSecurityDetective
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: SecurityDetective
+    - type: PresetIdCard
+      job: EMJobSecurityDetective
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeSecurityDetective
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: SecurityDetective
+        - state: badge_top_security
+    - type: PresetIdCard
+      job: EMJobSecurityDetective
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardBrigMaster
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: BrigMaster
+    - type: PresetIdCard
+      job: EMJobBrigMaster
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeBrigMaster
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: BrigMaster
+        - state: badge_top_security
+    - type: PresetIdCard
+      job: EMJobBrigMaster
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardSecurityOfficer
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: SecurityOfficer
+    - type: PresetIdCard
+      job: EMJobSecurityOfficer
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeSecurityOfficer
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: SecurityOfficer
+        - state: badge_top_security
+    - type: PresetIdCard
+      job: EMJobSecurityOfficer
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardSecurityAssistant
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: SecurityAssistant
+    - type: PresetIdCard
+      job: EMJobSecurityAssistant
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeSecurityAssistant
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: SecurityAssistant
+        - state: badge_top_security
+    - type: PresetIdCard
+      job: EMJobSecurityAssistant
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardServicesSupervisor
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: ServicesSupervisor
+    - type: PresetIdCard
+      job: EMJobServicesSupervisor
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeServicesSupervisor
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: ServicesSupervisor
+        - state: badge_top_services
+    - type: PresetIdCard
+      job: EMJobServicesSupervisor
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardBotanist
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Botanist
+    - type: PresetIdCard
+      job: EMJobBotanist
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeBotanist
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Botanist
+        - state: badge_top_services
+    - type: PresetIdCard
+      job: EMJobBotanist
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardChef
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Chef
+    - type: PresetIdCard
+      job: EMJobChef
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeChef
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Chef
+        - state: badge_top_services
+    - type: PresetIdCard
+      job: EMJobChef
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardBartender
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Bartender
+    - type: PresetIdCard
+      job: EMJobBartender
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeBartender
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Bartender
+        - state: badge_top_services
+    - type: PresetIdCard
+      job: EMJobBartender
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardJanitor
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Janitor
+    - type: PresetIdCard
+      job: EMJobJanitor
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeJanitor
+  name: ID badgev
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Janitor
+        - state: badge_top_services
+    - type: PresetIdCard
+      job: EMJobJanitor
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardActor
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Actor
+    - type: PresetIdCard
+      job: EMJobActor
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeActor
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Actor
+        - state: badge_top_services
+    - type: PresetIdCard
+      job: EMJobActor
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardPriest
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Priest
+    - type: PresetIdCard
+      job: EMJobPriest
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgePriest
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Priest
+        - state: badge_top_services
+    - type: PresetIdCard
+      job: EMJobPriest
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardServiceAssistant
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: ServiceAssistant
+    - type: PresetIdCard
+      job: EMJobServiceAssistant
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeServiceAssistant
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: ServiceAssistant
+        - state: badge_top_services
+    - type: PresetIdCard
+      job: EMJobServiceAssistant
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardPassenger
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: Passenger
+    - type: PresetIdCard
+      job: EMJobPassenger
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgePassenger
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Passenger
+    - type: PresetIdCard
+      job: EMJobPassenger
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardStationAdministrator
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: StationAdministrator
+    - type: PresetIdCard
+      job: EMJobStationAdministrator
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeStationAdministrator
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: StationAdministrator
+        - state: badge_top_administrative
+    - type: PresetIdCard
+      job: EMJobStationAdministrator
+
+- type: entity
+  parent: EMIdCardEmpty
+  id: EMIdCardStationOverwatch
+  name: ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_card
+        - sprite: *icon-rsi
+          offset: *icon-offset
+          state: StationOverwatch
+    - type: PresetIdCard
+      job: EMJobStationOverwatch
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeStationOverwatch
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: StationOverwatch
+        - state: badge_top_administrative
+    - type: PresetIdCard
+      job: EMJobStationOverwatch
+
+- type: entity
+  parent: EMIdBadgeEmpty
+  id: EMIdBadgeGenpop
+  name: ID badge
+  components:
+    - type: Sprite
+      layers:
+        - state: base_id_badge
+        - sprite: *icon-rsi
+          offset: *icon-badge-offset
+          state: Prisoner
+        - state: badge_genpop
+    - type: Access
+      tags:
+        - EMGenpopEnter
+    - type: GenpopIdCard
+    - type: IdCard
+      jobTitle: em-job-name-prisoner
+      jobIcon: EMJobIconPrisoner
+      canMicrowave: false
+    - type: ExpireIdCard
+      expireMessage: genpop-prisoner-id-expire
+      expiredAccess:
+        - EMGenpopLeave

@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobJanitor
+  groups:
+    - EMJanitorPDA
+
+- type: loadoutGroup
+  id: EMJanitorPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMJanitorPDA
+    - EMJanitorBadge
+
+- type: loadout
+  id: EMJanitorPDA
+  equipment:
+    id: EMJanitorPDA
+
+- type: loadout
+  id: EMJanitorBadge
+  equipment:
+    id: EMIdBadgeJanitor

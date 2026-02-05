@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobSecurityDetective
+  groups:
+    - EMSecurityDetectivePDA
+
+- type: loadoutGroup
+  id: EMSecurityDetectivePDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMSecurityDetectivePDA
+    - EMSecurityDetectiveBadge
+
+- type: loadout
+  id: EMSecurityDetectivePDA
+  equipment:
+    id: EMSecurityDetectivePDA
+
+- type: loadout
+  id: EMSecurityDetectiveBadge
+  equipment:
+    id: EMIdBadgeSecurityDetective

@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-4.0",
+    "copyright": "Taken from https://github.com/ss220-space/Paradise/commit/4bee04c8b8e94a72e77d28a9f674da859bb362de and edited by ArZarLordOfMango",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "base-pda"
+        },
+        {
+            "name": "sec-pda"
+        },
+        {
+            "name": "srv-pda"
+        },
+        {
+            "name": "med-pda"
+        },
+        {
+            "name": "eng-pda"
+        },
+        {
+            "name": "res-pda"
+        },
+        {
+            "name": "log-pda"
+        },
+        {
+            "name": "adm-pda"
+        }
+    ]
+}

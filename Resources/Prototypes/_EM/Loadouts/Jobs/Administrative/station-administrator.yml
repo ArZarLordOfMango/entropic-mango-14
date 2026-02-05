@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobStationAdministrator
+  groups:
+    - EMStationAdministratorPDA
+
+- type: loadoutGroup
+  id: EMStationAdministratorPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMStationAdministratorPDA
+    - EMStationAdministratorBadge
+
+- type: loadout
+  id: EMStationAdministratorPDA
+  equipment:
+    id: EMStationAdministratorPDA
+
+- type: loadout
+  id: EMStationAdministratorBadge
+  equipment:
+    id: EMIdBadgeStationAdministrator

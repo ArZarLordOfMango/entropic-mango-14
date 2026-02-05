@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "license": "CC BY-SA 4.0",
+	"copyright": "base_id_card taken from https://github.com/tgstation/tgstation/commit/ab90ddbf8216aa2708b21d70ba2c04292330323a and edited by ArZarLordOfMango, badge_* taken from https://github.com/shiptest-ss13/Shiptest/commit/e1612c783549296cc8d323743d75fef08fee17cf and edited by ArZarLordOfMango ",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "base_id_card"
+        },
+        {
+            "name": "base_id_badge"
+        },
+        {
+            "name": "badge_top_services"
+        },
+        {
+            "name": "badge_top_security"
+        },
+        {
+            "name": "badge_top_research"
+        },
+        {
+            "name": "badge_top_medical"
+        },
+        {
+            "name": "badge_top_logistics"
+        },
+        {
+            "name": "badge_top_engineering"
+        },
+        {
+            "name": "badge_top_administrative"
+        },
+        {
+            "name": "badge_genpop"
+        }
+    ]
+}
