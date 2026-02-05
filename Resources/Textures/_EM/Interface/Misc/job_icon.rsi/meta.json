@@ -1,0 +1,113 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-4.0",
+	"copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/e71d6c4fba5a51f99b81c295dcaec4fc2f58fb19/icons/mob/screen1.dmi and edited by ArZarLordOfMango, Scout taken from https://github.com/cmss13-devs/cmss13/blob/56fbf11f797463f88aac015cafef04d6d99499ec/icons/mob/hud/marine_hud.dmi and edited by ArZarLordOfMango ",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "LogisticsSupervisor"
+        },
+        {
+            "name": "Scout"
+        },
+        {
+            "name": "Miner"
+        },
+        {
+            "name": "LogisticsAssistant"
+        },
+        {
+            "name": "MedicalSupervisor"
+        },
+        {
+            "name": "Medic"
+        },
+        {
+            "name": "Chemist"
+        },
+        {
+            "name": "MedicalAssistant"
+        },
+        {
+            "name": "EngineeringSupervisor"
+        },
+        {
+            "name": "Engineer"
+        },
+        {
+            "name": "AtmosphericEngineer"
+        },
+        {
+            "name": "EngineeringAssistant"
+        },
+        {
+            "name": "ResearchSupervisor"
+        },
+        {
+            "name": "Researcher"
+        },
+        {
+            "name": "ResearchAssistant"
+        },
+        {
+            "name": "SecuritySupervisor"
+        },
+        {
+            "name": "SecurityDetective"
+        },
+        {
+            "name": "BrigMaster"
+        },
+        {
+            "name": "SecurityOfficer"
+        },
+        {
+            "name": "SecurityAssistant"
+        },
+        {
+            "name": "ServicesSupervisor"
+        },
+        {
+            "name": "Botanist"
+        },
+        {
+            "name": "Chef"
+        },
+        {
+            "name": "Bartender"
+        },
+        {
+            "name": "Janitor"
+        },
+        {
+            "name": "Actor"
+        },
+        {
+            "name": "Priest"
+        },
+        {
+            "name": "ServiceAssistant"
+        },
+        {
+            "name": "Passenger"
+        },
+        {
+            "name": "StationAdministrator"
+        },
+        {
+            "name": "StationOverwatch"
+        },
+        {
+            "name": "Base"
+        },
+        {
+          "name": "Prisoner"
+        },
+        {
+            "name": "NT"
+        }
+    ]
+}

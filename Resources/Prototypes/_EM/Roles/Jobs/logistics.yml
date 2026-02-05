@@ -3,23 +3,37 @@
   name: em-job-name-logistics-supervisor
   description: em-job-description-logistics-supervisor
   playTimeTracker: EMJobLogisticsSupervisor
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconLogisticsSupervisor"
+  weight: 5
+  supervisors: em-job-name-station-administrator
+  access:
+    - EMLogistics
+    - EMScout
+    - EMMiner
+    - EMLogisticsSupervisor
+    - EMAdministrative
+    - EMMaintenance
+    - EMSpace
   setPreference: true
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
-    components:
-      - type: CommandStaff
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+    - !type:AddComponentSpecial
+      components:
+        - type: CommandStaff
 
 - type: job
   id: EMJobScout
   name: em-job-name-scout
   description: em-job-description-scout
   playTimeTracker: EMJobScout
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconScout"
+  supervisors: em-job-name-logistics-supervisor
+  access:
+    - EMLogistics
+    - EMScout
+    - EMMaintenance
+    - EMSpace
   setPreference: true
 
 - type: job
@@ -27,8 +41,13 @@
   name: em-job-name-miner
   description: em-job-description-miner
   playTimeTracker: EMJobMiner
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconMiner"
+  supervisors: em-job-name-logistics-supervisor
+  access:
+    - EMLogistics
+    - EMMiner
+    - EMMaintenance
+    - EMSpace
   setPreference: true
 
 - type: job
@@ -36,6 +55,10 @@
   name: em-job-name-logistics-assistant
   description: em-job-description-logistics-assistant
   playTimeTracker: EMJobLogisticsAssistant
-  icon: "JobIconHeadOfPersonnel"
-  supervisors: job-supervisors-hop
+  icon: "EMJobIconLogisticsAssistant"
+  supervisors: em-job-name-logistics-supervisor
+  access:
+    - EMLogistics
+    - EMMaintenance
+    - EMSpace
   setPreference: true

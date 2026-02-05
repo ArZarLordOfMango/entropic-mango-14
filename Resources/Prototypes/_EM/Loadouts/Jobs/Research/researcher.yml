@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobResearcher
+  groups:
+    - EMResearcherPDA
+
+- type: loadoutGroup
+  id: EMResearcherPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMResearcherPDA
+    - EMResearcherBadge
+
+- type: loadout
+  id: EMResearcherPDA
+  equipment:
+    id: EMResearcherPDA
+
+- type: loadout
+  id: EMResearcherBadge
+  equipment:
+    id: EMIdBadgeResearcher

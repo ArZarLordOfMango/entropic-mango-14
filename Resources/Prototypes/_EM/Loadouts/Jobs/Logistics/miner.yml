@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobMiner
+  groups:
+    - EMMinerPDA
+
+- type: loadoutGroup
+  id: EMMinerPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMMinerPDA
+    - EMMinerBadge
+
+- type: loadout
+  id: EMMinerPDA
+  equipment:
+    id: EMMinerPDA
+
+- type: loadout
+  id: EMMinerBadge
+  equipment:
+    id: EMIdBadgeMiner

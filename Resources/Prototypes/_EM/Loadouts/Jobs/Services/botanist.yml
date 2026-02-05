@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobBotanist
+  groups:
+    - EMBotanistPDA
+
+- type: loadoutGroup
+  id: EMBotanistPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMBotanistPDA
+    - EMBotanistBadge
+
+- type: loadout
+  id: EMBotanistPDA
+  equipment:
+    id: EMBotanistPDA
+
+- type: loadout
+  id: EMBotanistBadge
+  equipment:
+    id: EMIdBadgeBotanist

@@ -1,0 +1,14 @@
+- type: Tag
+  id: EMWhitelistChameleon
+
+- type: Tag
+  id: EMWhitelistChameleonIdCard
+
+- type: Tag
+  id: EMWhitelistChameleonPDA
+
+- type: Tag
+  id: EMIdCard
+
+- type: Tag
+  id: EMIdBadge

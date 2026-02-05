@@ -1,0 +1,726 @@
+- type: entity
+  parent: [BaseItem, StorePresetUplink]
+  id: EMBasePDA
+  name: PDA
+  description: Personal Data Assistant.
+  categories: [ForkFiltered]
+  components:
+    - type: Appearance
+      appearanceDataInit:
+        enum.PdaVisuals.PdaType: !type:String pda
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "base-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: base-pda
+    - type: Pda
+      paiSlot:
+        priority: -2
+        whitelist:
+          components:
+            - PAI
+      penSlot:
+        startingItem: Pen
+        priority: -1
+        whitelist:
+          tags:
+            - Write
+      idSlot:
+        name: access-id-card-component-default
+        ejectSound: /Audio/Machines/id_swipe.ogg
+        insertSound: /Audio/Machines/id_insert.ogg
+        whitelist:
+          tags:
+            - EMIdCard
+      id: EMIdCardEmpty
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        PDA-id: !type:ContainerSlot {}
+        PDA-pen: !type:ContainerSlot {}
+        PDA-pai: !type:ContainerSlot {}
+        Cartridge-Slot: !type:ContainerSlot {}
+        program-container: !type:Container
+    - type: ItemSlots
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - idcard
+        - Belt
+    - type: Ringer
+    - type: RingerUplink
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+      receiveFrequencyId: PDA
+      prefix: device-address-prefix-console
+      savableAddress: false
+    - type: WirelessNetworkConnection
+      range: 500
+    - type: CartridgeLoader
+      uiKey: enum.PdaUiKey.Key
+      preinstalled:
+        - NotekeeperCartridge
+      cartridgeSlot:
+        priority: -1
+        name: device-pda-slot-component-slot-name-cartridge
+        ejectSound: /Audio/Machines/id_swipe.ogg
+        insertSound: /Audio/Machines/id_insert.ogg
+        whitelist:
+          components:
+            - Cartridge
+    - type: ActivatableUI
+      key: enum.PdaUiKey.Key
+      singleUser: true
+    - type: UserInterface
+      interfaces:
+        enum.PdaUiKey.Key:
+          type: PdaBoundUserInterface
+        enum.StoreUiKey.Key:
+          type: StoreBoundUserInterface
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - EMWhitelistChameleon
+        - EMWhitelistChameleonPDA
+
+- type: entity
+  parent: EMBasePDA
+  id: EMPassengerPDA
+  name: passenger PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardPassenger
+
+- type: entity
+  parent: EMBasePDA
+  id: EMBaseLogisticsPDA
+  name: logistics PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardEmpty
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "log-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: log-pda
+
+- type: entity
+  parent: EMBaseLogisticsPDA
+  id: EMLogisticsSupervisorPDA
+  name: logistics supervisor PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardLogisticsSupervisor
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "log-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: log-pda
+
+- type: entity
+  parent: EMBaseLogisticsPDA
+  id: EMScoutPDA
+  name: scout PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardScout
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "log-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: log-pda
+
+- type: entity
+  parent: EMBaseLogisticsPDA
+  id: EMMinerPDA
+  name: miner PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardMiner
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "log-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: log-pda
+
+- type: entity
+  parent: EMBaseLogisticsPDA
+  id: EMLogisticsAssistantPDA
+  name: logistics assistant PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardLogisticsAssistant
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "log-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: log-pda
+
+- type: entity
+  parent: EMBasePDA
+  id: EMBaseMedicalPDA
+  name: medical PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardEmpty
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "med-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: med-pda
+
+- type: entity
+  parent: EMBaseMedicalPDA
+  id: EMMedicalSupervisorPDA
+  name: medical supervisor PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardMedicalSupervisor
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "med-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: med-pda
+
+- type: entity
+  parent: EMBaseMedicalPDA
+  id: EMMedicPDA
+  name: medic PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardMedic
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "med-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: med-pda
+
+- type: entity
+  parent: EMBaseMedicalPDA
+  id: EMChemistPDA
+  name: chemis PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardChemist
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "med-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: med-pda
+
+- type: entity
+  parent: EMBaseMedicalPDA
+  id: EMMedicalAssistantPDA
+  name: medical supervisor PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardMedicalAssistant
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "med-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: med-pda
+
+- type: entity
+  parent: EMBasePDA
+  id: EMBaseEngineeringPDA
+  name: engineering PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardEmpty
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "eng-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: eng-pda
+
+- type: entity
+  parent: EMBaseEngineeringPDA
+  id: EMEngineeringSupervisorPDA
+  name: engineering supervisor PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardEngineeringSupervisor
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "eng-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: eng-pda
+
+- type: entity
+  parent: EMBaseEngineeringPDA
+  id: EMEngineerPDA
+  name: engineer PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardEngineer
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "eng-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: eng-pda
+
+- type: entity
+  parent: EMBaseEngineeringPDA
+  id: EMAtmosphericEngineerPDA
+  name: atmospheric engineer PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardAtmosphericEngineer
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "eng-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: eng-pda
+
+- type: entity
+  parent: EMBaseEngineeringPDA
+  id: EMEngineeringAssistantPDA
+  name: engineering assistant PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardEngineeringAssistant
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "eng-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: eng-pda
+
+- type: entity
+  parent: EMBasePDA
+  id: EMBaseResearchPDA
+  name: research PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardEmpty
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "res-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: res-pda
+
+- type: entity
+  parent: EMBaseResearchPDA
+  id: EMResearchSupervisorPDA
+  name: researhch supervisor PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardResearchSupervisor
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "res-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: res-pda
+
+- type: entity
+  parent: EMBaseResearchPDA
+  id: EMResearcherPDA
+  name: researcher PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardResearcher
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "res-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: res-pda
+
+- type: entity
+  parent: EMBaseResearchPDA
+  id: EMResearchAssistantPDA
+  name: research assistant PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardResearchAssistant
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "res-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: res-pda
+
+- type: entity
+  parent: EMBasePDA
+  id: EMBaseSecurityPDA
+  name: PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardEmpty
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "sec-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: sec-pda
+
+- type: entity
+  parent: EMBaseSecurityPDA
+  id: EMSecuritySupervisorPDA
+  name: security supervisor PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardSecuritySupervisor
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "sec-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: sec-pda
+
+- type: entity
+  parent: EMBaseSecurityPDA
+  id: EMSecurityDetectivePDA
+  name: security detective PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardSecurityDetective
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "sec-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: sec-pda
+
+- type: entity
+  parent: EMBaseSecurityPDA
+  id: EMBrigMasterPDA
+  name: brig master PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardBrigMaster
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "sec-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: sec-pda
+
+- type: entity
+  parent: EMBaseSecurityPDA
+  id: EMSecurityOfficerPDA
+  name: security officer PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardSecurityOfficer
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "sec-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: sec-pda
+
+- type: entity
+  parent: EMBaseSecurityPDA
+  id: EMSecurityAssistantPDA
+  name: security assistant PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardSecurityAssistant
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "sec-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: sec-pda
+
+- type: entity
+  parent: EMBasePDA
+  id: EMBaseServicesPDA
+  name: PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardEmpty
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "srv-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: srv-pda
+
+- type: entity
+  parent: EMBaseServicesPDA
+  id: EMServicesSupervisorPDA
+  name: services supervisor PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardServicesSupervisor
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "srv-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: srv-pda
+
+- type: entity
+  parent: EMBaseServicesPDA
+  id: EMBotanistPDA
+  name: botanist PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardBotanist
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "srv-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: srv-pda
+
+- type: entity
+  parent: EMBaseServicesPDA
+  id: EMChefPDA
+  name: chef PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardChef
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "srv-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: srv-pda
+
+- type: entity
+  parent: EMBaseServicesPDA
+  id: EMBartenderPDA
+  name: bartender PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardBartender
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "srv-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: srv-pda
+
+- type: entity
+  parent: EMBaseServicesPDA
+  id: EMJanitorPDA
+  name: janitor PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardJanitor
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "srv-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: srv-pda
+
+- type: entity
+  parent: EMBaseServicesPDA
+  id: EMActorPDA
+  name: actor PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardActor
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "srv-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: srv-pda
+
+- type: entity
+  parent: EMBaseServicesPDA
+  id: EMPriestPDA
+  name: priest PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardPriest
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "srv-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: srv-pda
+
+- type: entity
+  parent: EMBaseServicesPDA
+  id: EMServiceAssistantPDA
+  name: service assistant PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardServiceAssistant
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "srv-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: srv-pda
+
+- type: entity
+  parent: EMBasePDA
+  id: EMBaseAdministrativePDA
+  name: PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardEmpty
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "adm-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: adm-pda
+
+- type: entity
+  parent: EMBaseAdministrativePDA
+  id: EMStationAdministratorPDA
+  name: station administrator PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardStationAdministrator
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "adm-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: adm-pda
+
+- type: entity
+  parent: EMBaseAdministrativePDA
+  id: EMStationOverwatchPDA
+  name: station overwatch PDA
+  description: Why isn't it gray?
+  components:
+    - type: Pda
+      id: EMIdCardStationOverwatch
+    - type: Sprite
+      sprite: _EM/Objects/Misc/pda.rsi
+      layers:
+        - map: ["enum.PdaVisualLayers.Base"]
+          state: "adm-pda"
+    - type: Icon
+      sprite: _EM/Objects/Misc/pda.rsi
+      state: adm-pda

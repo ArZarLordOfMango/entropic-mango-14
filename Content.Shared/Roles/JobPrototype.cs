@@ -127,7 +127,7 @@ namespace Content.Shared.Roles
         public EntProtoId? JobPreviewEntity = null;
 
         [DataField]
-        public ProtoId<JobIconPrototype> Icon { get; private set; } = "JobIconUnknown";
+        public ProtoId<JobIconPrototype> Icon { get; private set; } = "EMJobBaseIcon"; // EM changed
 
         [DataField(serverOnly: true)]
         public JobSpecial[] Special { get; private set; } = Array.Empty<JobSpecial>();

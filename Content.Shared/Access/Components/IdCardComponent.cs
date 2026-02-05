@@ -34,7 +34,7 @@ public sealed partial class IdCardComponent : Component
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public ProtoId<JobIconPrototype> JobIcon = "JobIconUnknown";
+    public ProtoId<JobIconPrototype> JobIcon = "EMJobBaseIcon"; // EM changed
 
     /// <summary>
     /// Holds the job prototype when the ID card has no associated station record

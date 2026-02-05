@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobChef
+  groups:
+    - EMChefPDA
+
+- type: loadoutGroup
+  id: EMChefPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMChefPDA
+    - EMChefBadge
+
+- type: loadout
+  id: EMChefPDA
+  equipment:
+    id: EMChefPDA
+
+- type: loadout
+  id: EMChefBadge
+  equipment:
+    id: EMIdBadgeChef

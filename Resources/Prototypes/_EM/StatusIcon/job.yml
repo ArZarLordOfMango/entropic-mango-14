@@ -1,0 +1,266 @@
+- type: jobIcon
+  abstract: true
+  id: EMJobBaseIcon
+  priority: 1
+  locationPreference: Right
+  isShaded: true
+  icon:
+    sprite: &icon-rsi /Textures/_EM/Interface/Misc/job_icon.rsi
+    state: Base
+  jobName: Base
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconStationAdministrator
+  icon:
+    sprite: *icon-rsi
+    state: StationAdministrator
+  jobName: em-job-name-station-administrator
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconStationOverwatch
+  icon:
+    sprite: *icon-rsi
+    state: StationOverwatch
+  jobName: em-job-name-station-overwatch
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconEngineeringSupervisor
+  icon:
+    sprite: *icon-rsi
+    state: EngineeringSupervisor
+  jobName: em-job-name-engineering-supervisor
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconEngineer
+  icon:
+    sprite: *icon-rsi
+    state: Engineer
+  jobName: em-job-name-engineer
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconAtmosphericEngineer
+  icon:
+    sprite: *icon-rsi
+    state: AtmosphericEngineer
+  jobName: em-job-name-atmospheric-engineer
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconEngineeringAssistant
+  icon:
+    sprite: *icon-rsi
+    state: EngineeringAssistant
+  jobName: em-job-name-engineering-assistant
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconPassenger
+  icon:
+    sprite: *icon-rsi
+    state: Passenger
+  jobName: em-job-name-passenger
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconLogisticsSupervisor
+  icon:
+    sprite: *icon-rsi
+    state: LogisticsSupervisor
+  jobName: em-job-name-logistics-supervisor
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconScout
+  icon:
+    sprite: *icon-rsi
+    state: Scout
+  jobName: em-job-name-scout
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconMiner
+  icon:
+    sprite: *icon-rsi
+    state: Miner
+  jobName: em-job-name-miner
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconLogisticsAssistant
+  icon:
+    sprite: *icon-rsi
+    state: LogisticsAssistant
+  jobName: em-job-name-logistics-assistant
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconMedicalSupervisor
+  icon:
+    sprite: *icon-rsi
+    state: MedicalSupervisor
+  jobName: em-job-name-medical-supervisor
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconMedic
+  icon:
+    sprite: *icon-rsi
+    state: Medic
+  jobName: em-job-name-medic
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconChemist
+  icon:
+    sprite: *icon-rsi
+    state: Chemist
+  jobName: em-job-name-chemist
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconMedicalAssistant
+  icon:
+    sprite: *icon-rsi
+    state: MedicalAssistant
+  jobName: em-job-name-medic-assistant
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconResearchSupervisor
+  icon:
+    sprite: *icon-rsi
+    state: ResearchSupervisor
+  jobName: em-job-name-research-supervisor
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconResearcher
+  icon:
+    sprite: *icon-rsi
+    state: Researcher
+  jobName: em-job-name-researcher
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconResearchAssistant
+  icon:
+    sprite: *icon-rsi
+    state: ResearchAssistant
+  jobName: em-job-name-research-assistant
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconSecuritySupervisor
+  icon:
+    sprite: *icon-rsi
+    state: SecuritySupervisor
+  jobName: em-job-name-security-supervisor
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconSecurityDetective
+  icon:
+    sprite: *icon-rsi
+    state: SecurityDetective
+  jobName: em-job-name-security-detective
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconBrigMaster
+  icon:
+    sprite: *icon-rsi
+    state: BrigMaster
+  jobName: em-job-name-brig-master
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconSecurityOfficer
+  icon:
+    sprite: *icon-rsi
+    state: SecurityOfficer
+  jobName: em-job-name-security-officer
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconSecurityAssistant
+  icon:
+    sprite: *icon-rsi
+    state: SecurityAssistant
+  jobName: em-job-name-security-assistant
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconServicesSupervisor
+  icon:
+    sprite: *icon-rsi
+    state: ServicesSupervisor
+  jobName: em-job-name-services-supervisor
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconPriest
+  icon:
+    sprite: *icon-rsi
+    state: Priest
+  jobName: em-job-name-priest
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconActor
+  icon:
+    sprite: *icon-rsi
+    state: Actor
+  jobName: em-job-name-actor
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconJanitor
+  icon:
+    sprite: *icon-rsi
+    state: Janitor
+  jobName: em-job-name-janitor
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconBartender
+  icon:
+    sprite: *icon-rsi
+    state: Bartender
+  jobName: em-job-name-bartender
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconChef
+  icon:
+    sprite: *icon-rsi
+    state: Chef
+  jobName: em-job-name-chef
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconBotanist
+  icon:
+    sprite: *icon-rsi
+    state: Botanist
+  jobName: em-job-name-botanist
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconServiceAssistant
+  icon:
+    sprite: *icon-rsi
+    state: ServiceAssistant
+  jobName: em-job-name-services-assistant
+
+- type: jobIcon
+  parent: EMJobBaseIcon
+  id: EMJobIconPrisoner
+  icon:
+    sprite: *icon-rsi
+    state: Prisoner
+  jobName: em-job-name-services-assistant

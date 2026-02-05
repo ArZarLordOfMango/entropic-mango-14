@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobActor
+  groups:
+    - EMActorPDA
+
+- type: loadoutGroup
+  id: EMActorPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMActorPDA
+    - EMActorBadge
+
+- type: loadout
+  id: EMActorPDA
+  equipment:
+    id: EMActorPDA
+
+- type: loadout
+  id: EMActorBadge
+  equipment:
+    id: EMIdBadgeActor

@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobBartender
+  groups:
+    - EMBartenderPDA
+
+- type: loadoutGroup
+  id: EMBartenderPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMBartenderPDA
+    - EMBartenderBadge
+
+- type: loadout
+  id: EMBartenderPDA
+  equipment:
+    id: EMBartenderPDA
+
+- type: loadout
+  id: EMBartenderBadge
+  equipment:
+    id: EMIdBadgeBartender

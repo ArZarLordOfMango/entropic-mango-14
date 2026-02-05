@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobLogisticsSupervisor
+  groups:
+    - EMLogisticsSupervisorPDA
+
+- type: loadoutGroup
+  id: EMLogisticsSupervisorPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMLogisticsSupervisorPDA
+    - EMLogisticsSupervisorBadge
+
+- type: loadout
+  id: EMLogisticsSupervisorPDA
+  equipment:
+    id: EMLogisticsSupervisorPDA
+
+- type: loadout
+  id: EMLogisticsSupervisorBadge
+  equipment:
+    id: EMIdBadgeLogisticsSupervisor

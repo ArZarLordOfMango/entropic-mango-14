@@ -3,6 +3,6 @@
   name: em-job-name-passenger
   description: em-job-description-passenger
   playTimeTracker: EMJobPassenger
-  icon: "JobIconPassenger"
+  icon: "EMJobIconPassenger"
   supervisors: job-supervisors-everyone
   setPreference: true

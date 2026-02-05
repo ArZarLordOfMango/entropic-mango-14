@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobSecurityOfficer
+  groups:
+    - EMSecurityOfficerPDA
+
+- type: loadoutGroup
+  id: EMSecurityOfficerPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMSecurityOfficerPDA
+    - EMSecurityOfficerBadge
+
+- type: loadout
+  id: EMSecurityOfficerPDA
+  equipment:
+    id: EMSecurityOfficerPDA
+
+- type: loadout
+  id: EMSecurityOfficerBadge
+  equipment:
+    id: EMIdBadgeSecurityOfficer

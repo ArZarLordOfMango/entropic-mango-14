@@ -3,35 +3,79 @@
   name: em-job-name-station-administrator
   description: em-job-description-station-administrator
   playTimeTracker: EMJobStationAdministrator
-  icon: "JobIconPassenger"
+  icon: "EMJobIconStationAdministrator"
   joinNotifyCrew: true
+  weight: 10
   supervisors: job-supervisors-centcom
+  access:
+    - EMStationAdministrator
+    - EMAdministrative
+    - EMLogistics
+    - EMLogisticsSupervisor
+    - EMScout
+    - EMMiner
+    - EMMedical
+    - EMMedicalSupervisor
+    - EMMedic
+    - EMChemist
+    - EMResearch
+    - EMResearchSupervisor
+    - EMResearcher
+    - EMEngineering
+    - EMEngineeringSupervisor
+    - EMAtmospheric
+    - EMReactor
+    - EMSecurity
+    - EMSecuritySupervisor
+    - EMSecurityDetective
+    - EMBrigMaster
+    - EMSecurityOfficer
+    - EMArmory
+    - EMArmoryRedCode
+    - EMGenpopEnter
+    - EMGenpopLeave
+    - EMServices
+    - EMServicesSupervisor
+    - EMPriest
+    - EMActor
+    - EMJanitor
+    - EMBar
+    - EMKitchen
+    - EMBotany
+    - EMMaintenance
+    - EMSpace
   setPreference: true
   canBeAntag: false
-  access:
-  - Maintenance
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
-    components:
-      - type: CommandStaff
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+    - !type:AddComponentSpecial
+      components:
+        - type: CommandStaff
 
 - type: job
   id: EMJobStationOverwatch
   name: em-job-name-station-overwatch
   description: em-job-description-station-overwatch
   playTimeTracker: EMJobStationOverwatch
-  icon: "JobIconPassenger"
+  icon: "EMJobIconStationOverwatch"
   joinNotifyCrew: true
   supervisors: job-supervisors-centcom
+  access:
+    - EMLogistics
+    - EMMedical
+    - EMResearch
+    - EMEngineering
+    - EMSecurity
+    - EMServices
+    - EMAdministrative
+    - EMStationOverwatch
+    - EMMaintenance
   setPreference: true
   canBeAntag: false
-  access:
-  - Maintenance
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
-    components:
-      - type: CommandStaff
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+    - !type:AddComponentSpecial
+      components:
+        - type: CommandStaff

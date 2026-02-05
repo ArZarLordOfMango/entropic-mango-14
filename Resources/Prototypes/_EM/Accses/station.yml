@@ -1,0 +1,163 @@
+# General
+
+- type: accessLevel
+  id: EMMaintenance
+  name: em-id-card-access-level-maintenance
+
+- type: accessLevel
+  id: EMSpace
+  name: em-id-card-access-level-space
+
+# Logistics
+
+- type: accessLevel
+  id: EMLogistics
+  name: em-id-card-access-level-logistics
+
+- type: accessLevel
+  id: EMLogisticsSupervisor
+  name: em-id-card-access-level-logistics-supervisor
+
+- type: accessLevel
+  id: EMScout
+  name: em-id-card-access-level-scout
+
+- type: accessLevel
+  id: EMMiner
+  name: em-id-card-access-level-miner
+
+# Medical
+
+- type: accessLevel
+  id: EMMedical
+  name: em-id-card-access-level-medical
+
+- type: accessLevel
+  id: EMMedicalSupervisor
+  name: em-id-card-access-level-medical-supervisor
+
+- type: accessLevel
+  id: EMMedic
+  name: em-id-card-access-level-medic
+
+- type: accessLevel
+  id: EMChemist
+  name: em-id-card-access-level-chemist
+
+# Research
+
+- type: accessLevel
+  id: EMResearch
+  name: em-id-card-access-level-research
+
+- type: accessLevel
+  id: EMResearchSupervisor
+  name: em-id-card-access-level-research-supervisor
+
+- type: accessLevel
+  id: EMResearcher
+  name: em-id-card-access-level-researcher
+
+# Engineering
+
+- type: accessLevel
+  id: EMEngineering
+  name: em-id-card-access-level-engineering
+
+- type: accessLevel
+  id: EMEngineeringSupervisor
+  name: em-id-card-access-level-engineering-supervisor
+
+- type: accessLevel
+  id: EMAtmospheric
+  name: em-id-card-access-level-atmospheric
+
+- type: accessLevel
+  id: EMReactor
+  name: em-id-card-access-level-reactor
+
+# Security
+
+- type: accessLevel
+  id: EMSecurity
+  name: em-id-card-access-level-security
+
+- type: accessLevel
+  id: EMSecuritySupervisor
+  name: em-id-card-access-level-security-supervisor
+
+- type: accessLevel
+  id: EMSecurityDetective
+  name: em-id-card-access-level-security-detective
+
+- type: accessLevel
+  id: EMBrigMaster
+  name: em-id-card-access-level-brig-master
+
+- type: accessLevel
+  id: EMSecurityOfficer
+  name: em-id-card-access-level-security-officer
+
+- type: accessLevel
+  id: EMArmory
+  name: em-id-card-access-level-armory
+
+- type: accessLevel
+  id: EMArmoryRedCode
+  name: em-id-card-access-level-armory-red-code
+
+- type: accessLevel
+  id: EMGenpopEnter
+  name: em-id-card-access-level-genpop-enter
+
+- type: accessLevel
+  id: EMGenpopLeave
+  name: em-id-card-access-level-genpop-leave
+
+# Services
+
+- type: accessLevel
+  id: EMServices
+  name: em-id-card-access-level-services
+
+- type: accessLevel
+  id: EMServicesSupervisor
+  name: em-id-card-access-level-services-supervisor
+
+- type: accessLevel
+  id: EMPriest
+  name: em-id-card-access-level-priest
+
+- type: accessLevel
+  id: EMActor
+  name: em-id-card-access-level-actor
+
+- type: accessLevel
+  id: EMJanitor
+  name: em-id-card-access-level-janitor
+
+- type: accessLevel
+  id: EMBar
+  name: em-id-card-access-level-bar
+
+- type: accessLevel
+  id: EMKitchen
+  name: em-id-card-access-level-kitchen
+
+- type: accessLevel
+  id: EMBotany
+  name: em-id-card-access-level-botany
+
+# Administrative
+
+- type: accessLevel
+  id: EMAdministrative
+  name: em-id-card-access-level-administrative
+
+- type: accessLevel
+  id: EMStationAdministrator
+  name: em-id-card-access-level-station-administrator
+
+- type: accessLevel
+  id: EMStationOverwatch
+  name: em-id-card-access-level-station-overwatch

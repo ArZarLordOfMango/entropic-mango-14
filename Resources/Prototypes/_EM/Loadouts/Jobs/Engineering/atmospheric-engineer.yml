@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobAtmosphericEngineer
+  groups:
+    - EMAtmosphericEngineerPDA
+
+- type: loadoutGroup
+  id: EMAtmosphericEngineerPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMAtmosphericEngineerPDA
+    - EMAtmosphericEngineerBadge
+
+- type: loadout
+  id: EMAtmosphericEngineerPDA
+  equipment:
+    id: EMAtmosphericEngineerPDA
+
+- type: loadout
+  id: EMAtmosphericEngineerBadge
+  equipment:
+    id: EMIdBadgeAtmosphericEngineer

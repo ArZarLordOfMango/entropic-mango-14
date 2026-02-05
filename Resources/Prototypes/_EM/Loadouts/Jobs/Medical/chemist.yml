@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobChemist
+  groups:
+    - EMChemistPDA
+
+- type: loadoutGroup
+  id: EMChemistPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMChemistPDA
+    - EMChemistBadge
+
+- type: loadout
+  id: EMChemistPDA
+  equipment:
+    id: EMChemistPDA
+
+- type: loadout
+  id: EMChemistBadge
+  equipment:
+    id: EMIdBadgeChemist

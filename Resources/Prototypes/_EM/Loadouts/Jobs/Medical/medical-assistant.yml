@@ -1,0 +1,21 @@
+- type: roleLoadout
+  id: JobEMJobMedicalAssistant
+  groups:
+    - EMMedicalAssistantPDA
+
+- type: loadoutGroup
+  id: EMMedicalAssistantPDA
+  name: loadout-group-security-id
+  loadouts:
+    - EMMedicalAssistantPDA
+    - EMMedicalAssistantBadge
+
+- type: loadout
+  id: EMMedicalAssistantPDA
+  equipment:
+    id: EMMedicalAssistantPDA
+
+- type: loadout
+  id: EMMedicalAssistantBadge
+  equipment:
+    id: EMIdBadgeMedicalAssistant
