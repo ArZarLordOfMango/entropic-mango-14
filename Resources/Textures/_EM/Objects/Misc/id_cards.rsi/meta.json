@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "license": "CC-BY-SA 4.0",
+    "license": "CC-BY-SA-4.0",
 	"copyright": "base_id_card taken from https://github.com/tgstation/tgstation/commit/ab90ddbf8216aa2708b21d70ba2c04292330323a and edited by ArZarLordOfMango, badge_* taken from https://github.com/shiptest-ss13/Shiptest/commit/e1612c783549296cc8d323743d75fef08fee17cf and edited by ArZarLordOfMango ",
     "size": {
         "x": 32,
