@@ -1,5 +1,3 @@
-# Not used in Baseline
-
 #- type: gameMapPool
 #  id: DefaultMapPool
 #  maps:
@@ -14,3 +12,5 @@
 #  - Plasma
 #  - Reach
 #  - Exo
+#  - Snowball
+#  - Serpentcrest
