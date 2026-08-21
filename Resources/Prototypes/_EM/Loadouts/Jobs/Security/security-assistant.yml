@@ -13,7 +13,7 @@
 - type: loadout
   id: EMSecurityAssistantPDA
   equipment:
-    id: EMSecurityAssistantPDA
+    id: EMSecurityAssistantPDAFilled
 
 - type: loadout
   id: EMSecurityAssistantBadge

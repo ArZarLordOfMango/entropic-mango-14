@@ -13,7 +13,7 @@
 - type: loadout
   id: EMPriestPDA
   equipment:
-    id: EMPriestPDA
+    id: EMPriestPDAFilled
 
 - type: loadout
   id: EMPriestBadge

@@ -42,14 +42,6 @@
 
 - type: jobIcon
   parent: EMJobBaseIcon
-  id: EMJobIconAtmosphericEngineer
-  icon:
-    sprite: *icon-rsi
-    state: AtmosphericEngineer
-  jobName: em-job-name-atmospheric-engineer
-
-- type: jobIcon
-  parent: EMJobBaseIcon
   id: EMJobIconEngineeringAssistant
   icon:
     sprite: *icon-rsi
@@ -263,3 +255,4 @@
     sprite: *icon-rsi
     state: Prisoner
   jobName: em-job-name-services-assistant
+

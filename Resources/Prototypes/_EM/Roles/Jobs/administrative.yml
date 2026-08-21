@@ -8,50 +8,51 @@
   weight: 10
   supervisors: job-supervisors-centcom
   access:
-    - EMStationAdministrator
-    - EMAdministrative
-    - EMLogistics
-    - EMLogisticsSupervisor
-    - EMScout
-    - EMMiner
-    - EMMedical
-    - EMMedicalSupervisor
-    - EMMedic
-    - EMChemist
-    - EMResearch
-    - EMResearchSupervisor
-    - EMResearcher
-    - EMEngineering
-    - EMEngineeringSupervisor
-    - EMAtmospheric
-    - EMReactor
-    - EMSecurity
-    - EMSecuritySupervisor
-    - EMSecurityDetective
-    - EMBrigMaster
-    - EMSecurityOfficer
-    - EMArmory
-    - EMArmoryRedCode
-    - EMGenpopEnter
-    - EMGenpopLeave
-    - EMServices
-    - EMServicesSupervisor
-    - EMPriest
-    - EMActor
-    - EMJanitor
-    - EMBar
-    - EMKitchen
-    - EMBotany
-    - EMMaintenance
-    - EMSpace
+  - EMStationAdministrator
+  - EMAdministrative
+  - EMLogistics
+  - EMLogisticsSupervisor
+  - EMScout
+  - EMMiner
+  - EMMedical
+  - EMMedicalSupervisor
+  - EMMedic
+  - EMChemist
+  - EMResearch
+  - EMResearchSupervisor
+  - EMResearcher
+  - EMEngineering
+  - EMEngineeringSupervisor
+  - EMAtmospheric
+  - EMReactor
+  - EMSecurity
+  - EMSecuritySupervisor
+  - EMSecurityDetective
+  - EMBrigMaster
+  - EMSecurityOfficer
+  - EMArmory
+  - EMArmoryRedCode
+  - EMGenpopEnter
+  - EMGenpopLeave
+  - EMServices
+  - EMServicesSupervisor
+  - EMPriest
+  - EMActor
+  - EMJanitor
+  - EMBar
+  - EMKitchen
+  - EMBotany
+  - EMMaintenance
+  - EMSpace
   setPreference: true
   canBeAntag: false
   special:
-    - !type:AddImplantSpecial
-      implants: [MindShieldImplant]
-    - !type:AddComponentSpecial
-      components:
-        - type: CommandStaff
+  - !type:AddImplantSpecial
+    implants:
+    - MindShieldImplant
+  - !type:AddComponentSpecial
+    components:
+    - type: CommandStaff
 
 - type: job
   id: EMJobStationOverwatch
@@ -62,20 +63,21 @@
   joinNotifyCrew: true
   supervisors: job-supervisors-centcom
   access:
-    - EMLogistics
-    - EMMedical
-    - EMResearch
-    - EMEngineering
-    - EMSecurity
-    - EMServices
-    - EMAdministrative
-    - EMStationOverwatch
-    - EMMaintenance
+  - EMLogistics
+  - EMMedical
+  - EMResearch
+  - EMEngineering
+  - EMSecurity
+  - EMServices
+  - EMAdministrative
+  - EMStationOverwatch
+  - EMMaintenance
   setPreference: true
   canBeAntag: false
   special:
-    - !type:AddImplantSpecial
-      implants: [MindShieldImplant]
-    - !type:AddComponentSpecial
-      components:
-        - type: CommandStaff
+  - !type:AddImplantSpecial
+    implants:
+    - MindShieldImplant
+  - !type:AddComponentSpecial
+    components:
+    - type: CommandStaff

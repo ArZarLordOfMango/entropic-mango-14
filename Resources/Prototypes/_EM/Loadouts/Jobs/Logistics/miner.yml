@@ -13,7 +13,7 @@
 - type: loadout
   id: EMMinerPDA
   equipment:
-    id: EMMinerPDA
+    id: EMMinerPDAFilled
 
 - type: loadout
   id: EMMinerBadge

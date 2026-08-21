@@ -1,0 +1,43 @@
+- type: gameMap
+  id: EMDev
+  mapName: EMDev
+  mapPath: /Maps/_EM/EMDev.yml
+  minPlayers: 0
+  stations:
+    Dev:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Dev"
+        - type: StationJobs
+          availableJobs:
+            EMJobLogisticsSupervisor: [ -1, -1 ]
+            EMJobScout: [ -1, -1 ]
+            EMJobMiner: [ -1, -1 ]
+            EMJobLogisticsAssistan: [ -1, -1 ]
+            EMJobMedicalSupervisor: [ -1, -1 ]
+            EMJobMedic: [ -1, -1 ]
+            EMJobChemist: [ -1, -1 ]
+            EMJobMedicalAssistant: [ -1, -1 ]
+            EMJobEngineeringSupervisor: [ -1, -1 ]
+            EMJobEngineer: [ -1, -1 ]
+            EMJobEngineeringAssistant: [ -1, -1 ]
+            EMJobResearchSupervisor: [ -1, -1 ]
+            EMJobResearcher: [ -1, -1 ]
+            EMJobResearchAssistant: [ -1, -1 ]
+            EMJobSecuritySupervisor: [ -1, -1 ]
+            EMJobSecurityDetective: [ -1, -1 ]
+            EMJobBrigMaster: [ -1, -1 ]
+            EMJobSecurityOfficer: [ -1, -1 ]
+            EMJobSecurityAssistant: [ -1, -1 ]
+            EMJobServicesSupervisor: [ -1, -1 ]
+            EMJobBotanist: [ -1, -1 ]
+            EMJobChef: [ -1, -1 ]
+            EMJobBartender: [ -1, -1 ]
+            EMJobJanitor: [ -1, -1 ]
+            EMJobActor: [ -1, -1 ]
+            EMJobPriest: [ -1, -1 ]
+            EMJobServiceAssistant: [ -1, -1 ]
+            EMJobPassenger: [ -1, -1 ]
+            EMJobStationAdministrator: [ -1, -1 ]
+            EMJobStationOverwatch: [ -1, -1 ]

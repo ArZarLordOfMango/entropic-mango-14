@@ -13,7 +13,7 @@
 - type: loadout
   id: EMPassengerPDA
   equipment:
-    id: EMPassengerPDA
+    id: EMPassengerPDAFilled
 
 - type: loadout
   id: EMPassengerBadge

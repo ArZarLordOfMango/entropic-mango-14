@@ -29,9 +29,6 @@
   id: EMJobEngineer
 
 - type: playTimeTracker
-  id: EMJobAtmosphericEngineer
-
-- type: playTimeTracker
   id: EMJobEngineeringAssistant
 
 - type: playTimeTracker
@@ -90,3 +87,4 @@
 
 - type: playTimeTracker
   id: EMJobStationOverwatch
+

@@ -13,7 +13,7 @@
 - type: loadout
   id: EMStationOverwatchPDA
   equipment:
-    id: EMStationOverwatchPDA
+    id: EMStationOverwatchPDAFilled
 
 - type: loadout
   id: EMStationOverwatchBadge

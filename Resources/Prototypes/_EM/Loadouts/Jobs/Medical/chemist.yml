@@ -13,7 +13,7 @@
 - type: loadout
   id: EMChemistPDA
   equipment:
-    id: EMChemistPDA
+    id: EMChemistPDAFilled
 
 - type: loadout
   id: EMChemistBadge

@@ -13,7 +13,7 @@
 - type: loadout
   id: EMBotanistPDA
   equipment:
-    id: EMBotanistPDA
+    id: EMBotanistPDAFilled
 
 - type: loadout
   id: EMBotanistBadge

@@ -1,0 +1,114 @@
+- type: entity
+  abstract: true
+  id: EMStructureBase
+  categories: [ ForkFiltered ]
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Clickable
+  - type: Transform
+    anchored: true
+
+- type: entity
+  abstract: true
+  id: EMStructureMovable
+  components:
+  - type: Transform
+    anchored: true
+    noRot: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - GlassAirlockLayer
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: GravityAffected
+  - type: Pullable
+
+- type: entity
+  abstract: true
+  id: EMStructureOccluder
+  components:
+  - type: BlockWeather
+  - type: SunShadowCast
+  - type: Occluder
+  - type: IsRoof
+
+- type: entity
+  abstract: true
+  id: EMStructureWall
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Appearance
+  - type: Sprite
+    drawdepth: Mobs
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+  - type: Airtight
+  - type: PlacementReplacement
+    key: walls
+  - type: RadiationBlocker
+    resistance: 2
+  - type: Icon
+    state: full
+  - type: Anchorable
+    flags: Anchorable
+  - type: Rotatable
+
+- type: entity
+  abstract: true
+  id: EMStructureWallDamageable
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MetalBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MetalLaserImpact
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+
+- type: entity
+  abstract: true
+  id: EMStructureWallRCDDeconstructible
+  components:
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
