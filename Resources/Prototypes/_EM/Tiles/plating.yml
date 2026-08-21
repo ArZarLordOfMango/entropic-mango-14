@@ -2,10 +2,10 @@
   id: EMLattice
   name: em-tiles-lattice
   sprite: /Textures/_EM/Tiles/lattice.png
+  editorHidden: false
   baseTurf: Space
   isSubfloor: true
   deconstructTools: [ Cutting ]
-  deconstructTimeMultiplier: 1
   weather: true
   footstepSounds:
     collection: FootstepCatwalk
@@ -16,11 +16,12 @@
 
 - type: tile
   id: EMPlating
+  name: em-tiles-plating
+  sprite: /Textures/_EM/Tiles/plating.png
+  editorHidden: false
   friction: 1.5
   heatCapacity: 10000
   isSubfloor: true
   footstepSounds:
     collection: FootstepPlating
   baseTurf: EMLattice
-  name: em-tiles-plating
-  sprite: /Textures/_EM/Tiles/plating.png

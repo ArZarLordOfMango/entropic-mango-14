@@ -45,7 +45,6 @@
   - EMMaintenance
   - EMSpace
   setPreference: true
-  canBeAntag: false
   special:
   - !type:AddImplantSpecial
     implants:
@@ -73,7 +72,6 @@
   - EMStationOverwatch
   - EMMaintenance
   setPreference: true
-  canBeAntag: false
   special:
   - !type:AddImplantSpecial
     implants:

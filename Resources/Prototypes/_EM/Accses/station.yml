@@ -69,6 +69,10 @@
   name: em-id-card-access-level-engineering-supervisor
 
 - type: accessLevel
+  id: EMAtmospheric
+  name: em-id-card-access-level-atmospheric
+
+- type: accessLevel
   id: EMReactor
   name: em-id-card-access-level-reactor
 

@@ -1,6 +1,7 @@
 - type: tile
   id: EMBaseTile
   abstract: true
+  editorHidden: false
   isSubfloor: false
   deconstructTools:
   - Prying

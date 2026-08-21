@@ -14,7 +14,7 @@
             EMJobLogisticsSupervisor: [ -1, -1 ]
             EMJobScout: [ -1, -1 ]
             EMJobMiner: [ -1, -1 ]
-            EMJobLogisticsAssistan: [ -1, -1 ]
+            EMJobLogisticsAssistant: [ -1, -1 ]
             EMJobMedicalSupervisor: [ -1, -1 ]
             EMJobMedic: [ -1, -1 ]
             EMJobChemist: [ -1, -1 ]

@@ -101,8 +101,9 @@
         collection:
           MetalLaserImpact
   - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
     damageContainer: StructuralInorganic
-    damageModifierSet: StructuralMetallic
 
 - type: entity
   abstract: true
