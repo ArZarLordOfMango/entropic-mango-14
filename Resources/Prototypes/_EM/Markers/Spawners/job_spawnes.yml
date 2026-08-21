@@ -187,23 +187,6 @@
           state: Engineer
 
 - type: entity
-  id: EMJobSpawnPointAtmosphericEngineer
-  parent: EMJobBaseSpawnPoint
-  name: job spawn point
-  suffix: AtmosphericEngineer
-  components:
-    - type: SpawnPoint
-      job_id: EMJobAtmosphericEngineer
-    - type: Sprite
-      layers:
-        - sprite: _EM/Markers/spawners.rsi
-        - state: square-spawner
-          color: "#f39f27"
-        - sprite: *icon-rsi
-          scale: 2.0,2.0
-          state: AtmosphericEngineer
-
-- type: entity
   id: EMJobSpawnPointEngineeringAssistant
   parent: EMJobBaseSpawnPoint
   name: job spawn point
@@ -542,3 +525,4 @@
         - sprite: *icon-rsi
           scale: 2.0,2.0
           state: StationOverwatch
+

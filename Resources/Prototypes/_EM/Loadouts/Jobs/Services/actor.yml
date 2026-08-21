@@ -13,7 +13,7 @@
 - type: loadout
   id: EMActorPDA
   equipment:
-    id: EMActorPDA
+    id: EMActorPDAFilled
 
 - type: loadout
   id: EMActorBadge

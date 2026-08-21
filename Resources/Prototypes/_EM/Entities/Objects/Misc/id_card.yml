@@ -369,35 +369,6 @@
 
 - type: entity
   parent: EMIdCardEmpty
-  id: EMIdCardAtmosphericEngineer
-  name: ID card
-  components:
-    - type: Sprite
-      layers:
-        - state: base_id_card
-        - sprite: *icon-rsi
-          offset: *icon-offset
-          state: AtmosphericEngineer
-    - type: PresetIdCard
-      job: EMJobAtmosphericEngineer
-
-- type: entity
-  parent: EMIdBadgeEmpty
-  id: EMIdBadgeAtmosphericEngineer
-  name: ID badge
-  components:
-    - type: Sprite
-      layers:
-        - state: base_id_badge
-        - sprite: *icon-rsi
-          offset: *icon-badge-offset
-          state: AtmosphericEngineer
-        - state: badge_top_engineering
-    - type: PresetIdCard
-      job: EMJobAtmosphericEngineer
-
-- type: entity
-  parent: EMIdCardEmpty
   id: EMIdCardEngineeringAssistant
   name: ID card
   components:
@@ -980,22 +951,25 @@
   id: EMIdBadgeGenpop
   name: ID badge
   components:
-    - type: Sprite
-      layers:
-        - state: base_id_badge
-        - sprite: *icon-rsi
-          offset: *icon-badge-offset
-          state: Prisoner
-        - state: badge_genpop
-    - type: Access
-      tags:
-        - EMGenpopEnter
-    - type: GenpopIdCard
-    - type: IdCard
-      jobTitle: em-job-name-prisoner
-      jobIcon: EMJobIconPrisoner
-      canMicrowave: false
-    - type: ExpireIdCard
-      expireMessage: genpop-prisoner-id-expire
-      expiredAccess:
-        - EMGenpopLeave
+  - type: Sprite
+    layers:
+    - state: base_id_badge
+    - sprite: *icon-rsi
+      offset: *icon-badge-offset
+      state: Prisoner
+    - state: badge_genpop
+    - state: badge_genpop_text
+      shader: unshaded
+  - type: Access
+    tags:
+    - EMGenpopEnter
+  - type: GenpopIdCard
+  - type: IdCard
+    jobTitle: em-job-name-prisoner
+    jobIcon: EMJobIconPrisoner
+    canMicrowave: false
+  - type: ExpireIdCard
+    expireMessage: genpop-prisoner-id-expire
+    expiredAccess:
+    - EMGenpopLeave
+

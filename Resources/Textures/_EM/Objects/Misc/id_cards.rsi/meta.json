@@ -36,6 +36,9 @@
         },
         {
             "name": "badge_genpop"
+        },
+        {
+            "name": "badge_genpop_text"
         }
     ]
 }

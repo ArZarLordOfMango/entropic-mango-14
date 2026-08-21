@@ -13,7 +13,7 @@
 - type: loadout
   id: EMEngineeringSupervisorPDA
   equipment:
-    id: EMEngineeringSupervisorPDA
+    id: EMEngineeringSupervisorPDAFilled
 
 - type: loadout
   id: EMEngineeringSupervisorBadge

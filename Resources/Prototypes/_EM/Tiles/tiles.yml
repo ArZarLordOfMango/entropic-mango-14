@@ -1,0 +1,17 @@
+- type: tile
+  id: EMBaseTile
+  abstract: true
+  editorHidden: false
+  isSubfloor: false
+  deconstructTools:
+  - Prying
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  baseTurf: EMPlating
+
+- type: tile
+  id: EMFloorSteel
+  parent: EMBaseTile
+  name: em-tiles-steel-floor
+  sprite: /Textures/_EM/Tiles/floor_steel.png

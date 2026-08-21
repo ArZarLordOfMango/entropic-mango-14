@@ -13,7 +13,7 @@
 - type: loadout
   id: EMChefPDA
   equipment:
-    id: EMChefPDA
+    id: EMChefPDAFilled
 
 - type: loadout
   id: EMChefBadge

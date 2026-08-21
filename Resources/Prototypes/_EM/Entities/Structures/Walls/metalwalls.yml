@@ -1,0 +1,28 @@
+- type: entity
+  abstract: true
+  parent:
+  - EMStructureBase
+  - EMStructureOccluder
+  - EMStructureWall
+  id: EMStructureBaseWall
+
+- type: entity
+  parent:
+  - EMStructureBaseWall
+  - EMStructureWallDamageable
+  - EMStructureWallRCDDeconstructible
+  id: EMWallSteel
+  name: steel wall
+  description: It seems to be a section of hull plated with steel.
+  categories: [ForkFiltered]
+  components:
+  - type: Sprite
+    sprite: _EM/Structures/Walls/steelwall.rsi
+  - type: Icon
+    sprite: _EM/Structures/Walls/steelwall.rsi
+    state: full
+  - type: IconSmooth
+    key: walls
+    base: wall
+  - type: WallReplacementMarker
+  - type: SpriteFade

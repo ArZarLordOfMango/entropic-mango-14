@@ -13,7 +13,7 @@
 - type: loadout
   id: EMScoutPDA
   equipment:
-    id: EMScoutPDA
+    id: EMScoutPDAFilled
 
 - type: loadout
   id: EMScoutBadge

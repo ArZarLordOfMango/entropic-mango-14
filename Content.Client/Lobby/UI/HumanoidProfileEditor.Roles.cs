@@ -165,14 +165,13 @@ public sealed partial class HumanoidProfileEditor
 
                 category.AddChild(new PanelContainer
                 {
-                    PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#464966") },
+                    PanelOverride = new StyleBoxFlat { BackgroundColor = department.Color }, // EM changes
                     Children =
                         {
                             new Label
                             {
-                                Text = Loc.GetString("humanoid-profile-editor-department-jobs-label",
-                                    ("departmentName", departmentName)),
-                                Margin = new Thickness(5f, 0, 0, 0)
+                                Text = departmentName, // EM changes
+                                Margin = new Thickness(5f, 2f, 0, 2f) // EM changes
                             }
                         }
                 });

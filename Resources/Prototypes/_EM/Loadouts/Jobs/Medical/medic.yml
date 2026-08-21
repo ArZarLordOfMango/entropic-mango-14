@@ -13,7 +13,7 @@
 - type: loadout
   id: EMMedicPDA
   equipment:
-    id: EMMedicPDA
+    id: EMMedicPDAFilled
 
 - type: loadout
   id: EMMedicBadge

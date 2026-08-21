@@ -13,7 +13,7 @@
 - type: loadout
   id: EMBrigMasterPDA
   equipment:
-    id: EMBrigMasterPDA
+    id: EMBrigMasterPDAFilled
 
 - type: loadout
   id: EMBrigMasterBadge

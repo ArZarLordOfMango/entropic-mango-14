@@ -31,20 +31,6 @@
   supervisors: em-job-name-engineering-supervisor
   access:
     - EMEngineering
-    - EMReactor
-    - EMMaintenance
-    - EMSpace
-  setPreference: true
-
-- type: job
-  id: EMJobAtmosphericEngineer
-  name: em-job-name-atmospheric-engineer
-  description: em-job-description-atmospheric-engineer
-  playTimeTracker: EMJobAtmosphericEngineer
-  icon: "EMJobIconAtmosphericEngineer"
-  supervisors: em-job-name-engineering-supervisor
-  access:
-    - EMEngineering
     - EMAtmospheric
     - EMReactor
     - EMMaintenance
@@ -63,3 +49,4 @@
     - EMMaintenance
     - EMSpace
   setPreference: true
+

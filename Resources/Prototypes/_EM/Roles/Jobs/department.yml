@@ -29,10 +29,9 @@
   color: "#f39f27"
   editorHidden: false
   roles:
-    - EMJobEngineeringSupervisor
-    - EMJobEngineer
-    - EMJobAtmosphericEngineer
-    - EMJobEngineeringAssistant
+  - EMJobEngineeringSupervisor
+  - EMJobEngineer
+  - EMJobEngineeringAssistant
 
 - type: department
   id: EMResearch
@@ -49,14 +48,14 @@
   id: EMSecurity
   name: em-department-Security
   description: em-department-Security-description
-  color: "#cb0000"
+  color: "#b91822"
   editorHidden: false
   roles:
-    - EMJobSecuritySupervisor
-    - EMJobSecurityDetective
-    - EMJobBrigMaster
-    - EMJobSecurityOfficer
-    - EMJobSecurityAssistant
+  - EMJobSecuritySupervisor
+  - EMJobSecurityDetective
+  - EMJobBrigMaster
+  - EMJobSecurityOfficer
+  - EMJobSecurityAssistant
 
 - type: department
   id: EMServices

@@ -13,7 +13,7 @@
 - type: loadout
   id: EMResearcherPDA
   equipment:
-    id: EMResearcherPDA
+    id: EMResearcherPDAFilled
 
 - type: loadout
   id: EMResearcherBadge
