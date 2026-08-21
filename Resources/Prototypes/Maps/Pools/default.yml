@@ -1,16 +1,13 @@
-#- type: gameMapPool
-#  id: DefaultMapPool
-#  maps:
-#  - Amber
-#  - Bagel
-#  - Box
-#  - Elkridge
-#  - Fland
-#  - Marathon
-#  - Oasis
-#  - Packed
-#  - Plasma
-#  - Reach
-#  - Exo
-#  - Snowball
-#  - Serpentcrest
+# - type: gameMapPool
+#   id: DefaultMapPool
+#   maps:
+#   - Bagel
+#   - Box
+#   - Elkridge
+#   - Marathon
+#   - Packed
+#   - Plasma
+#   - Exo
+#   - Snowball
+#   - Sushi
+#   - Tram2
